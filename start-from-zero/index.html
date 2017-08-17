@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <title>index</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <section class="feedback">
         <div class="container">
-            <div class="column-30">
-                <div class="blue-line">Interview Feedback</div>
-                <form action="" class="user-input">
-                    <div class="field">
-                        <input id='input-zero' type="text" name='username' placeholder="Username">
-                    </div>
-                    <div class="field">
-                        <input id='input-zero' type="password" name='password' placeholder="Password">
-                    </div>
-                    <button class="button" type='submit'>Login</button>
-                </form>
+            <div class="row">
+               <div class="col-md-3 form-column">
+                    <div class="blue-line">Interview Feedback</div>
+                    <form action="" class="user-input">
+                        <div class="field">
+                            <input id='input-zero' type="text" name='username' placeholder="Username">
+                        </div>
+                        <div class="field">
+                            <input id='input-zero' type="password" name='password' placeholder="Password">
+                        </div>
+                        <a href="#"></a>
+                        <input type="submit" class='button' value='Login'>
+                    </form>
+               </div>
+                
            </div>
         </div>
     </section>
     
     <section class="new-feedback">
         <div class="container">
-            <div class="row-flex">
-                <div class="column-30">
+            <div class="row center-row">
+                <div class="col-md-4">
                     <div class="image-feedback">
                         <img src="assets/new%20feedback.jpg" alt="new feedback">
                     </div>
                 </div>
-                <div class="column-10"></div>
-                <div class="column-60">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
                     <div class="text-wrapper">
                         <h3>View feedback results</h3>
                         <p class="lorem">
@@ -46,10 +51,10 @@
         </div>
     </section>
     
-    <section class="new-feedback result-feedback">
+    <section class="result-feedback">
         <div class="container">
-            <div class="row-flex">
-               <div class="column-60">
+            <div class="row center-row">
+               <div class="col-md-7">
                     <div class="text-wrapper">
                         <h3>View feedback results</h3>
                         <p class="lorem">
@@ -58,11 +63,11 @@
                     </div>
                 </div>
                 
-                <div class="column-10"></div>
-                <div class="column-30">
-                        <div class="image-feedback">
-                            <img src="assets/results.jpg" alt="new feedback">
-                        </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <div class="image-feedback">
+                        <img src="assets/results.jpg" alt="new feedback">
+                    </div>
                 </div>
             </div>
             
