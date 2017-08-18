@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/media-queries.css",
+	"sources": [
+		"../sass/media-queries.sass"
+	],
+	"sourcesContent": [
+		"$small-font: 12px;\n@media (max-width: 800px) {\n    .column-30 {\n        width: 48%;\n        margin-bottom: 10px; }\n\n    .column-30:nth-of-type(3) {}\n\n    #table-row th {\n        font-size: $small-font; }\n\n    #tbody {\n        tr {\n            td {\n                font-size: $small-font; } } }\n\n    .full-width {\n        width: 100%; }\n\n    .margin-right {\n        margin-right: 1%; } }\n\n\n\n@media (max-width: 600px) {\n    .column-30 {\n        width: 100%; }\n\n    .margin-right {\n        margin-right: 0; }\n\n    legend {\n        color: grey; }\n\n\n    nav {\n        .link-logout {\n            font-size: $small-font; }\n        .image {\n            width: 120px;\n            position: relative;\n            top: 17px; } }\n\n    .div-a {\n        .link-block {\n            font-size: $small-font;\n            padding: 0; } }\n\n    td,h4,textarea {\n        font-size: $small-font; }\n\n    .field-ev {\n        input {\n            font-size: $small-font; } }\n\n    p {\n        font-size: 13px; }\n\n    .image-feedback {\n        display: none; } }\n\n\n\n"
+	],
+	"mappings": "AACA,MAAM,EAAL,SAAS,EAAE,KAAK;;EACb,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,GAAI;IACX,aAAa,EAAE,IAAK;GAAG;;EAI3B,AAAW,UAAD,CAAC,EAAE,CAAC;IACV,SAAS,EATJ,IAAI;GASgB;;EAE7B,AAEQ,MAFF,CACF,EAAE,CACE,EAAE,CAAC;IACC,SAAS,EAdZ,IAAI;GAcwB;;EAErC,AAAA,WAAW,CAAC;IACR,KAAK,EAAE,IAAK;GAAG;;EAEnB,AAAA,aAAa,CAAC;IACV,YAAY,EAAE,EAAG;GAAG;;;AAI5B,MAAM,EAAL,SAAS,EAAE,KAAK;;EACb,AAAA,UAAU,CAAC;IACP,KAAK,EAAE,IAAK;GAAG;;EAEnB,AAAA,aAAa,CAAC;IACV,YAAY,EAAE,CAAE;GAAG;;EAEvB,AAAA,MAAM,CAAC;IACH,KAAK,EAAE,IAAK;GAAG;;EAGnB,AACI,GADD,CACC,YAAY,CAAC;IACT,SAAS,EArCR,IAAI;GAqCoB;;EAFjC,AAGI,GAHD,CAGC,MAAM,CAAC;IACH,KAAK,EAAE,KAAM;IACb,QAAQ,EAAE,QAAS;IACnB,GAAG,EAAE,IAAK;GAAG;;EAErB,AACI,MADE,CACF,WAAW,CAAC;IACR,SAAS,EA7CR,IAAI;IA8CL,OAAO,EAAE,CAAE;GAAG;;EAEtB,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,QAAQ,CAAC;IACX,SAAS,EAjDJ,IAAI;GAiDgB;;EAE7B,AACI,SADK,CACL,KAAK,CAAC;IACF,SAAS,EArDR,IAAI;GAqDoB;;EAEjC,AAAA,CAAC,CAAC;IACE,SAAS,EAAE,IAAK;GAAG;;EAEvB,AAAA,eAAe,CAAC;IACZ,OAAO,EAAE,IAAK;GAAG",
+	"names": []
+}

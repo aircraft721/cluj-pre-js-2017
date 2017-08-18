@@ -1,11 +1,7 @@
-
-var plus = document.querySelector('.plus-sign');
-
-plus.addEventListener('click',function(){
-    if (plus.textContent = '+'){
-        plus.textContent = '-';
-    }else{
-        plus.textContent = '+';
-    }
-})
-
+(function(){
+  
+  $('.plus-button').on('click', function() {
+    $('.line2').toggleClass('close-2');
+    return true;
+  });
+})();

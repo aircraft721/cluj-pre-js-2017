@@ -1,0 +1,194 @@
+/* line 14, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+div, p, h4, h3, input, a, ul, li, span, option, select {
+  font-family: Roboto;
+}
+
+/*NEW EVALUATION PAGE*/
+/* line 19, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.form-candidate {
+  height: 100%;
+}
+
+/* line 22, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.user-input {
+  width: 100%;
+}
+
+/* line 25, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.user-input .field-ev {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 30, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.user-input .field-ev input {
+  border: 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+/* line 34, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.user-input .field-ev #input-username, .user-input .field-ev #input-password {
+  width: 35%;
+  margin-right: 5%;
+}
+
+/* line 38, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.user-input .field-ev #input-calendar {
+  width: 20%;
+  height: 27px;
+}
+
+/* line 42, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+h4 {
+  color: #03A9F4;
+  padding-left: 40px;
+  margin-bottom: 7px;
+}
+
+/* line 48, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.tr-first {
+  height: 40px;
+  color: #ffffff;
+  background: #03A9F4;
+  padding-top: 10px;
+}
+
+/* line 54, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.tr-first td {
+  width: 25%;
+  text-align: center;
+}
+
+/* line 58, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.tr-third {
+  width: 25%;
+  text-align: center;
+}
+
+/* line 62, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.tr-third td {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+/* line 66, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.tr-third td input {
+  margin: 7px;
+}
+
+/* line 69, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.tr-third td:last-child {
+  border-right: 1px solid #000;
+}
+
+/* line 72, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.tr-third td:first-child {
+  border-left: 1px solid #000;
+}
+
+/* line 76, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+textarea {
+  border: 1px solid #000;
+  width: 99.7%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 83, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.ultimate-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 87, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+fieldset {
+  margin: 30px 0;
+}
+
+/* line 90, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+fieldset legend {
+  padding: 0 20px;
+}
+
+/* line 93, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.fieldset-wrap {
+  padding: 10px 10px;
+}
+
+/* line 96, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.fieldset-wrap .row1 {
+  padding: 7px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 104, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.column-30 {
+  width: 30%;
+}
+
+/* line 107, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.margin-right {
+  margin-right: 5%;
+}
+
+/* line 110, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.description {
+  font-size: 14px;
+}
+
+/* line 113, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+#select {
+  float: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(assets/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  background-size: 13px;
+  position: relative;
+  height: 20px;
+  width: 40%;
+}
+
+/* line 126, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+option, select {
+  font-size: 13px;
+}
+
+/* line 129, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.button-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* line 135, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.button2 {
+  background: #03A9F4;
+  color: #ffffff;
+  width: 120px;
+  text-align: center;
+  padding: 4px 25px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.5);
+  margin-top: 90px;
+  font-weight: 300;
+  font-size: 15px;
+  border: 0;
+  transition: all 300ms ease;
+}
+
+/* line 150, C:/Users/dan.constantinescu/Desktop/Stuff/cluj-pre-js-2017/start-from-zero/sass-refactor/sass/refactor-new-evaluation.sass */
+.button2:hover {
+  background: #02638f;
+  color: white;
+  -webkit-box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=../css/refactor-new-evaluation.map */

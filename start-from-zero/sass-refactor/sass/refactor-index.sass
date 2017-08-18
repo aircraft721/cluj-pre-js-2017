@@ -1,0 +1,149 @@
+
+body,html
+    height: 100% 
+
+$font: Roboto
+$main-color: #03A9F4
+$light-grey: #e9e9e9
+$dark-grey: #C4C4C4
+$white: #ffffff
+$font-small: 14px
+$font-normal: 16px
+$font-big: 18px
+
+
+div,p,h4, h3, input, a, ul, li, span, option
+    font-family: $font
+    
+
+/*HERO SECTION - LOGIN PAGE*/
+
+.feedback
+    padding: 100px 0
+    display: block
+    position: relative
+    
+    &::after
+        content: ''
+        padding: 100px 0
+        background-image: url(assets/feedback-banner.jpg)
+        background-size: cover
+        background-position: center
+        opacity: 0.7
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        z-index: -1
+    
+.result-feedback
+    padding-bottom: 30px
+    padding-top: 30px
+    background: #F6F6F6
+
+.form-column
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75)
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75)
+
+    
+
+.blue-line
+    text-align: center
+    background: $main-color
+    height: 50px
+    line-height: 48px
+    color: $white;
+    font-size: $font-normal
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.79)
+    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.79)
+    position: relative
+    z-index: 10000
+    
+form
+    display: flex
+    flex-direction: column
+    background: $white
+    padding: 30px 0
+    
+.user-input
+    width: 100%
+    
+
+        
+.field:first-child
+        width: 80%
+        margin-bottom: 15px
+    
+.field:nth-child(2)
+        width: 80%
+    
+.field
+    margin: 0 auto
+    
+    input 
+        border: 0;
+        border-bottom: 1px solid $light-grey
+
+#input-zero
+    width: 100%
+    
+.button
+    background: $main-color
+    color: $white
+    display: block
+    margin: 0 auto
+    padding: 4px 25px
+    border-radius: 2px
+    -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    margin-top: 90px
+    font-weight: 300
+    font-size: 15px
+    border: 0
+    transition: all 300ms ease
+
+    &:hover
+        background: darken($main-color, 20%)
+        color: white
+        -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+        box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5) 
+    
+    
+/*THE SECOND AND THE THIRD SECTION FROM THE LOGIN PAGE*/
+
+.center-row 
+    display: flex
+    align-items: center
+    height: 100%
+    
+
+    
+    
+.image-feedback
+    img
+        width: 100%
+        
+
+.text-wrapper
+    width: 100%
+    
+h3
+    margin-bottom: 30px
+    font-size: $font-big
+
+p
+    font-size: $font-small
+    letter-spacing: 0.5px
+    line-height: 130%
+
+
+/*FOOTER*/
+
+footer 
+    height: 50px;
+    background: $dark-grey;
+    
+.footer-paragraph
+    float: right
