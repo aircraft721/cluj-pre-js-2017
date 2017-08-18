@@ -4,66 +4,82 @@
     <meta charset="UTF-8">
     <title>New Evaluation</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
     <nav class="menu">
-        <ul>
-            <li><img src="assets/126-Softvision-logo.png"
-             alt=""></li>
-            <li class="container">
-                <div class="row-flex">
-                    <ul class='inner-ul'>
-                        <li><a href="#0">Evaluations</a></li>
-                        <li><a href="#0">New Evaluations</a></li>
-                    </ul>
-                </div>
-            </li>
-            
-            <li class='logout'>Logout</li>
+        
+         <div class="container" id='height-100'>
+           <div class="row" id='height-100'>
+               <div class="col-sm-12 position-div" id='height-100'>
+                   <div class="one"><a href="evaluation-zero.html">Evaluations</a></div>
+                   <div class="two"><a href="#0">New Evaluations</a></div>
+               </div>
+           </div>
+
+         </div>
+        
+        <ul class='down-ul'>
+            <li><a href="index.html"><img src="assets/126-Softvision-logo.png"
+             alt=""></a></li>
+             <li id='logout'>Logout</li>
         </ul>
     </nav>
+    
+    
+   
     
     <section class="form-candidate">
         <div class="container">
            <div class="row">
-
-                <form action="" class="user-input">
-                    <div class="field field-new">
-                        <input id='input-zero' type="text" name='username' placeholder="Username">
-                        <input id='input-zero' type="password" name='password' placeholder="Password">
+                <div class="col-md-12">
+                    <form action="" class="user-input" method='post'>
+                    <div class="field-ev">
+                        <input id='input-username' type="text" name='username' placeholder="Username">
+                        <input id='input-password' type="password" name='password' placeholder="Password">
+                        <input id='input-calendar' type="date">
+                        
                     </div>
                     
                     
                     <h4>Technical Level</h4>
-                    <div class='blue-line2'>
-                        <div class='trainee-blue'>Trainee</div>
-                        <div class='junior-blue'>Junior</div>
-                        <div class='middle-blue'>Middle</div>
-                        <div class='senior-blue'>Senior</div>
-                    </div>
-                    <div class="field-radio">
-                       <div class='trainee-radio'>
-                           <input type="radio" name='junior'>
-                       </div>
-                       <div class="junior-radio">
-                           <input type="radio" name='junior'>
-                           <input type="radio" name='junior'>
-                           <input type="radio" name='junior'>
-                       </div>
-                       <div class="middle-radio">
-                            <input type="radio" name='junior'>
-                            <input type="radio" name='junior'>
-                            <input type="radio" name='junior'>
-                       </div>
-                       <div class="senior-radio">
-                            <input type="radio" name='junior'>
-                            <input type="radio" name='junior'>
-                            <input type="radio" name='junior'>
-                       </div>
+                    <table>
                         
-                    </div>
+                        <tbody class='tbody-new'>
+                            <tr class='tr-first'>
+                                <td>Trainee</td>
+                                <td>Junior</td>
+                                <td>Middle</td>
+                                <td>Senior</td>
+                            </tr>
+                            
+                            
+                            <tr class="tr-third">
+                                <td>
+                                    <input type="radio" name='junior'>
+                                </td>
+                                <td>
+                                    <input type="radio" name='junior'>
+                                    <input type="radio" name='junior'>
+                                    <input type="radio" name='junior'>
+                                </td>
+                                <td>
+                                    <input type="radio" name='junior'>
+                                    <input type="radio" name='junior'>
+                                    <input type="radio" name='junior'>
+                                </td>
+                                <td>
+                                    <input type="radio" name='junior'>
+                                    <input type="radio" name='junior'>
+                                    <input type="radio" name='junior'>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>   
+                    
+                                                      
                     
                     <h4>Should the candidate be hired?</h4>
                     <textarea name="" id="" cols="5" rows="10" placeholder="The type of project that is suitable for the candidate Is guidance required for the candidate"></textarea>
@@ -74,94 +90,97 @@
                     <h4>Workflow, Leadership and Soft Skills</h4>
                     <textarea name="" id="" cols="5" rows="10" placeholder="Describe the environment in which the candidate works. Describe any guidance or management experience."></textarea>
                     
+                    <div class='ultimate-wrap'>
+                    
                     <fieldset>
-                        <legend>OOP, Design Patterns</legend>
+                      <legend>OOP, Design Patterns</legend>
+                       <div class="fieldset-wrap">
+                            <div class="row1">
+                                
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Classes</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Exception handling</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                                <div class="column-30 ">
+                                    <span class='description'>Version Control</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row1">
+                                
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Classes</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Exception handling</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                                <div class="column-30 ">
+                                    <span class='description'>Version Control</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="row1">
+                                
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Classes</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Exception handling</span>
+                                    <select name="" id="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                       </div>
                         
-                           
-                            <div class="row">
-                                
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                
-                            </div>
                         
                     </fieldset>
                     
@@ -169,8 +188,9 @@
                     
                     <fieldset>
                         <legend>HTTP</legend>
-                        <div class="container">
-                            <div class="row">
+                        <div class="fieldset-wrap">
+                        
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -201,7 +221,7 @@
                                 </div>
                             </div>
                             
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -239,8 +259,8 @@
                     
                     <fieldset>
                         <legend>HTTP</legend>
-                        <div class="container">
-                            <div class="row">
+                        <div class="fieldset-wrap">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>HTML</span>
@@ -271,7 +291,7 @@
                                 </div>
                             </div>
                             
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -301,8 +321,8 @@
                     
                     <fieldset>
                         <legend>HTTP</legend>
-                        <div class="container">
-                            <div class="row">
+                        <div class="fieldset-wrap">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>CSS</span>
@@ -333,7 +353,7 @@
                                 </div>
                             </div>
                             
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -371,8 +391,8 @@
                     
                     <fieldset>
                         <legend>HTTP</legend>
-                        <div class="container">
-                            <div class="row">
+                        <div class="fieldset-wrap">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -403,7 +423,7 @@
                                 </div>
                             </div>
                             
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -434,7 +454,7 @@
                                 </div>
                             </div>
                             
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -464,7 +484,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -494,7 +514,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -524,7 +544,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -544,8 +564,8 @@
                     
                     <fieldset>
                         <legend>HTTP</legend>
-                        <div class="container">
-                            <div class="row">
+                        <div class="fieldset-wrap">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>CSS</span>
@@ -576,7 +596,7 @@
                                 </div>
                             </div>
                             
-                            <div class="row">
+                            <div class="row1">
                                 
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
@@ -593,12 +613,16 @@
                             
                         </div>
                     </fieldset>
+                    
+                    </div>
                 
                 
                 
-                
+                <input type="submit" class='button' value='Login'>
                 
               </form>
+                </div>
+                
               </div>
                
            </div>
