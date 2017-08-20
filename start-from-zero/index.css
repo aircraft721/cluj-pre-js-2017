@@ -95,7 +95,7 @@ body, html {
     padding: 100px 0;
     display: block;
     position: relative;
-    
+
 }
 
 .feedback::after {
@@ -187,7 +187,7 @@ form {
 }
 
 .field:nth-child(2){
-    width: 85%;    
+    width: 85%;
 }
 
 .field {
@@ -221,15 +221,15 @@ form {
 #input-calendar {
     width: 20%;
     height: 27px;
-    
+
 }
 
 
 
 .image-feedback img{
     width: 100%;
-    
-    
+
+
 }
 
 .text-wrapper {
@@ -238,7 +238,7 @@ form {
 
 
 
-footer{ 
+footer{
     height: 50px;
     background: #C4C4C4;
 }
@@ -261,7 +261,7 @@ ul, li {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .logout {
@@ -387,23 +387,23 @@ textarea {
     border: 1px solid black;
 }
 
-.margin-right{ 
+.margin-right{
     margin-right: 5%;
 }
 
 
 #select {
     float: right;
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;   
+    appearance: none;
     background-image: url(assets/down-arrow.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 13px;
     position: relative;
     height: 20px;
-    
+
 }
 
 
@@ -514,21 +514,21 @@ fieldset legend {
     padding-top: 10px;
 }
 
-.tr-third {
+.tr-second {
     width: 25%;
     text-align: center;
 }
 
-.tr-third td {
+.tr-second td {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
 
-.tr-third td:last-child{
+.tr-second td:last-child{
     border-right: 1px solid black;
 }
 
-.tr-third td:first-child{
+.tr-second td:first-child{
     border-left: 1px solid black;
 }
 
@@ -576,7 +576,7 @@ td div {
 td div span {
     position: relative;
     bottom: 2px;
-    
+
 }
 
 td div span a {
@@ -596,7 +596,3 @@ td div span a {
 .detalii {
     text-align: right;
 }
-
-
-
-
