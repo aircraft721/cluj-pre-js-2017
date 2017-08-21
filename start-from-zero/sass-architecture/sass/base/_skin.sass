@@ -1,0 +1,78 @@
+.minus-toggle 
+    background: $main-color
+    transition: all 0.5s cubic-bezier(.76,-0.26,.15,1.32)
+    
+.minus-toggle::after 
+    background: $main-color
+    transition: all 0.5s cubic-bezier(.76,-0.26,.15,1.32)
+
+.submit-button
+    background: $main-color
+    color: $white
+    -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    transition: background 300ms ease, box-shadow 300ms ease
+    
+    &:hover
+        background: darken($main-color, 20%)
+        -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+        box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+        
+.button-login-form
+    background: $main-color
+    color: $white
+    -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    
+    &:hover
+        background: darken($main-color, 20%)
+        color: white
+        -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+        box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    
+.blue-line
+    background: $main-color
+    color: $white;
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.79)
+    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.79)
+    
+.technical-level
+    color: $white
+    background: $main-color
+    
+.technical-level-category
+    td
+        border-bottom: 1px solid $black
+        border-top: 1px solid $black
+        
+    td:last-child
+        border-right: 1px solid $black
+    
+    td:first-child
+        border-left: 1px solid $black
+    
+.textarea
+    border: 1px solid $black
+    &:focus
+        outline: none
+        border: 1px solid $main-color
+        box-shadow: 0 0 5px $box-shadow-focus
+    
+footer
+    background: $dark-grey
+    
+.navbar 
+    border-bottom: 1px solid $dark-grey
+    
+.link-logout
+    color: $black
+    
+.link-block
+    color: $black
+    &:hover
+       border-bottom: 6px solid $main-color
+    
+.result-feedback
+    background: $dim-grey
+
+
