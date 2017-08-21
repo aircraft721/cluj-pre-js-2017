@@ -1,0 +1,75 @@
+/*BUTTON FROM THE EVALUATION PAGE + */
+.button3
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px; 
+    
+
+/*.plus-button 
+    display: inline-block
+    margin: 20px
+    width: 50px
+    height: 50px
+    border: 1px dotted black */
+
+.line2 
+    display: block
+    width: 20px
+    height: 4px
+    background: $main-color
+    position: relative
+    top: 70%
+    transition: all 0.5s cubic-bezier(.76,-0.26,.15,1.32)
+    transform: translateY(-50%)
+    transform-origin: center center
+
+.line2::after 
+    content: ""
+    display: block
+    width: 20px
+    height: 4px
+    background: $main-color
+    position: absolute;
+    transition: all 0.5s cubic-bezier(.76,-0.26,.15,1.32)
+    transform-origin: center center
+    transform: rotate(90deg)
+
+.close-2.line2::after 
+  transform: rotate(0deg)
+  background: transparent
+
+.close-2.line2 
+  transform: rotate(180deg)
+  top: 45
+
+
+.button-wrap
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    
+
+    
+/*BUTTON FROM THE NEW-EVALUATION PAGE*/
+.button2
+    background: $main-color
+    color: $white
+    width: 120px
+    text-align: center
+    padding: 12px 25px
+    border-radius: 2px
+    -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    margin-top: 40px
+    font-weight: 300
+    font-size: 16px
+    border: 0
+    transition: all 300ms ease
+    
+    &:hover
+        background: darken($main-color, 20%)
+        color: white
+        -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+        box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+        

@@ -1,0 +1,62 @@
+.blue-line
+    text-align: center
+    background: $main-color
+    height: 50px
+    line-height: 48px
+    color: $white;
+    font-size: $font-normal
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.79)
+    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.79)
+    position: relative
+    z-index: 10000
+    
+form
+    display: flex
+    flex-direction: column
+    background: $white
+    padding: 30px 0
+    
+.user-input
+    width: 100%
+    
+
+        
+.field:first-child
+        width: 80%
+        margin-bottom: 15px
+    
+.field:nth-child(2)
+        width: 80%
+    
+.field
+    margin: 0 auto
+    
+    input 
+        border: 0;
+        border-bottom: 1px solid $light-grey
+        height: 23px
+    
+
+#input-zero
+    width: 100%
+    
+.button
+    background: $main-color
+    color: $white
+    display: block
+    margin: 0 auto
+    padding: 4px 25px
+    border-radius: 2px
+    -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+    margin-top: 90px
+    font-weight: 300
+    font-size: 15px
+    border: 0
+    transition: all 300ms ease
+
+    &:hover
+        background: darken($main-color, 20%)
+        color: white
+        -webkit-box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
+        box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.5)
