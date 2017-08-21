@@ -1,7 +1,7 @@
 (function(){
   
-  $('.plus-button').on('click', function() {
-    $('.line2').toggleClass('close-2');
+  $('.button-toggle').on('click', function() {
+    $('.minus-toggle').toggleClass('close-2');
     return true;
   });
    
