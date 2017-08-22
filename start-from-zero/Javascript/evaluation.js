@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Evaluation</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="sass-architecture/css/main.css">
-    <link rel="stylesheet" href="sass-architecture/css/he.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-
+const Nav = function(){
+    return `
     <nav class='navbar'>
         <a href="index.html"><img src="assets/126-Softvision-logo.png" alt="" class="image"></a>
         <a class='link-logout' href="#">Logout</a>
@@ -23,19 +12,33 @@
             </div>
         </div>
     </nav>
+    `;
+}
 
 
+const TableHeadElement = function(options){
+    const tableHead = [];
+    const elements = [{name:'Nume'},{name:'Tehnologie'},{name:'Nivel'}, {name:''}];
+    elements.forEach(function(n){
+        tableHead.push(`<th class='table-head-element'>${n.name}</th>`);
+    })
+    return `
+        ${tableHead.join('')}
+    `;
+}
+
+
+
+const EvaluationPageTable = function(){
+    return `
     <section class="table-section">
         <div class="container full-width">
             <div class="row">
                 <div class="col-md-12">
                     <table class='table-evaluation'>
-                        <thead>
+                            <thead>
                             <tr class="table-head-row">
-                                <th class='table-head-element'>Nume</th>
-                                <th class='table-head-element'>Tehnologie</th>
-                                <th class='table-head-element'>Nivel</th>
-                                <th class='table-head-element'></th>
+                                ${TableHeadElement()}
                             </tr>
                         </thead>
                         <tbody class='table-body'>
@@ -86,13 +89,30 @@
             </div>
         </div>
     </section>
+    `;
+}
 
+const Footer = function(){
+    return `
     <footer class='fixed-footer'>
         <div class="container">
             <p class="footer-paragraph">Copyright@softvision 2017</p>
         </div>
     </footer>
+    `;
+}
 
-<script src='plus.js'></script>
-</body>
-</html>
+
+const EvaluationPage = function(){
+    return `
+        ${Nav()}
+        ${EvaluationPageTable()}
+        ${Footer()}
+    `;
+}
+
+window.onload = function(){
+    
+    const app = document.querySelector('#app');
+    app.innerHTML = EvaluationPage();
+}
