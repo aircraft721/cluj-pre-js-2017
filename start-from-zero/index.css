@@ -5,10 +5,51 @@ div,p,h4, h3, input, a, ul, li, span, option{
 }
 
 
+nav {
+    height: 92px;
+    border-bottom: 1px solid grey;
+}
+
+
+.link-block {
+    display: inline-block;
+    height: 87px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.link-block:hover {
+    border-bottom: 6px solid #03A9F4;
+}
+
+.image {
+    display: inline-block;
+    float: left;
+    clear:both;
+}
+
+.link-logout {
+    display: inline-block;
+    float: right;
+    line-height: 92px;
+    margin-right:15px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.div-a {
+    height: 90px;
+    line-height: 90px;
+}
+
+
 
 h3 {
     margin-bottom: 30px;
-    font-size: 18px
+    font-size: 18px;
 }
 
 p {
@@ -54,7 +95,7 @@ body, html {
     padding: 100px 0;
     display: block;
     position: relative;
-    
+
 }
 
 .feedback::after {
@@ -114,8 +155,8 @@ form {
 
 .form-column{
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 }
 
 .button {
@@ -146,7 +187,7 @@ box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 }
 
 .field:nth-child(2){
-    width: 85%;    
+    width: 85%;
 }
 
 .field {
@@ -162,8 +203,10 @@ box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 .field-ev {
     width: 100%;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
+
+
 
 .field-ev > input {
     border: 0;
@@ -178,13 +221,15 @@ box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 #input-calendar {
     width: 20%;
     height: 27px;
-    
+
 }
 
 
 
 .image-feedback img{
     width: 100%;
+
+
 }
 
 .text-wrapper {
@@ -193,10 +238,9 @@ box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 
 
 
-footer{ 
+footer{
     height: 50px;
     background: #C4C4C4;
-    
 }
 
 .footer-paragraph {
@@ -217,7 +261,7 @@ ul, li {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .logout {
@@ -343,23 +387,23 @@ textarea {
     border: 1px solid black;
 }
 
-.margin-right{ 
+.margin-right{
     margin-right: 5%;
 }
 
 
 #select {
     float: right;
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;   
+    appearance: none;
     background-image: url(assets/down-arrow.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 13px;
     position: relative;
     height: 20px;
-    
+
 }
 
 
@@ -470,21 +514,21 @@ fieldset legend {
     padding-top: 10px;
 }
 
-.tr-third {
+.tr-second {
     width: 25%;
     text-align: center;
 }
 
-.tr-third td {
+.tr-second td {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
 
-.tr-third td:last-child{
+.tr-second td:last-child{
     border-right: 1px solid black;
 }
 
-.tr-third td:first-child{
+.tr-second td:first-child{
     border-left: 1px solid black;
 }
 
@@ -532,7 +576,7 @@ td div {
 td div span {
     position: relative;
     bottom: 2px;
-    
+
 }
 
 td div span a {
@@ -552,7 +596,3 @@ td div span a {
 .detalii {
     text-align: right;
 }
-
-
-
-

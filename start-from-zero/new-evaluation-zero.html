@@ -5,101 +5,104 @@
     <title>New Evaluation</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sass-architecture/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    
-    <nav class="menu">
-        
-         <div class="container" id='height-100'>
-           <div class="row" id='height-100'>
-               <div class="col-sm-12 position-div" id='height-100'>
-                   <div class="one"><a href="evaluation-zero.html">Evaluations</a></div>
-                   <div class="two"><a href="#0">New Evaluations</a></div>
-               </div>
-           </div>
 
-         </div>
-        
-        <ul class='down-ul'>
-            <li><a href="index.html"><img src="assets/126-Softvision-logo.png"
-             alt=""></a></li>
-             <li id='logout'>Logout</li>
-        </ul>
+    <nav class='navbar'>
+        <div class='logo'>
+            <a href="index.html"><img src="assets/126-Softvision-logo.png" alt="" class="image"></a>
+        </div>
+        <a class='link-logout' href="#">Logout</a>
+        <div class="container">
+            <div class="row">
+                <div class='link-block-wrapper'>
+                    <a class='link-block' href="evaluation-zero.html">Evaluations</a>
+                    <a class='link-block' href="#0">New Evaluations</a>
+                </div>
+            </div>
+        </div>
     </nav>
-    
-    
-   
-    
+
+
     <section class="form-candidate">
         <div class="container">
            <div class="row">
                 <div class="col-md-12">
                     <form action="" class="user-input" method='post'>
                     <div class="field-ev">
-                        <input id='input-username' type="text" name='username' placeholder="Username">
-                        <input id='input-password' type="password" name='password' placeholder="Password">
-                        <input id='input-calendar' type="date">
-                        
+                        <input class='input-username' type="text" name='username' placeholder="Username">
+                        <input class='input-password' type="password" name='password' placeholder="Password">
+                        <input class='input-calendar' type="date">
+
                     </div>
-                    
-                    
-                    <h4>Technical Level</h4>
-                    <table>
-                        
+
+
+                    <h4 class='technical-header'>Technical Level</h4>
+                    <table class='technical-level-table'>
+
                         <tbody class='tbody-new'>
-                            <tr class='tr-first'>
+                            <tr class='technical-level'>
                                 <td>Trainee</td>
                                 <td>Junior</td>
                                 <td>Middle</td>
                                 <td>Senior</td>
                             </tr>
-                            
-                            
-                            <tr class="tr-third">
+
+
+                            <tr class="technical-level-category">
                                 <td>
-                                    <input type="radio" name='junior'>
+                                    <input class='input-checkbox' type="checkbox" name='trainee'>
                                 </td>
                                 <td>
-                                    <input type="radio" name='junior'>
-                                    <input type="radio" name='junior'>
-                                    <input type="radio" name='junior'>
+                                    <input class='input-checkbox' type="checkbox" name='junior1'>
+                                    <input class='input-checkbox' type="checkbox" name='junior2'>
+                                    <input class='input-checkbox' type="checkbox" name='junior3'>
                                 </td>
                                 <td>
-                                    <input type="radio" name='junior'>
-                                    <input type="radio" name='junior'>
-                                    <input type="radio" name='junior'>
+                                    <input class='input-checkbox' type="checkbox" name='middle1'>
+                                    <input class='input-checkbox' type="checkbox" name='middle2'>
+                                    <input class='input-checkbox' type="checkbox" name='middle3'>
                                 </td>
                                 <td>
-                                    <input type="radio" name='junior'>
-                                    <input type="radio" name='junior'>
-                                    <input type="radio" name='junior'>
+                                    <input class='input-checkbox' type="checkbox" name='senior1'>
+                                    <input class='input-checkbox' type="checkbox" name='senior2'>
+                                    <input class='input-checkbox' type="checkbox" name='senior3'>
                                 </td>
                             </tr>
                         </tbody>
-                    </table>   
-                    
-                                                      
-                    
-                    <h4>Should the candidate be hired?</h4>
-                    <textarea name="" id="" cols="5" rows="10" placeholder="The type of project that is suitable for the candidate Is guidance required for the candidate"></textarea>
-                    
-                    <h4>General impression</h4>
-                    <textarea name="" id="" cols="5" rows="10" placeholder="The type of project that is suitable for the candidate Is guidance required for the candidate" required></textarea>
-                    
-                    <h4>Workflow, Leadership and Soft Skills</h4>
-                    <textarea name="" id="" cols="5" rows="10" placeholder="Describe the environment in which the candidate works. Describe any guidance or management experience."></textarea>
-                    
-                    <div class='ultimate-wrap'>
-                    
-                    <fieldset>
-                      <legend>OOP, Design Patterns</legend>
+                    </table>
+
+
+
+
+                    <div class="textarea-wrap">
+                        <h4 class='textarea-header'>Should the candidate be hired?</h4>
+                        <textarea class='textarea' name="" id="" rows="10" placeholder="The type of project that is suitable for the candidate Is guidance required for the candidate"></textarea>
+                    </div>
+
+                    <div class="textarea-wrap">
+                        <h4 class='textarea-header'>General impression</h4>
+                        <textarea class='textarea' name="" id="" rows="10" placeholder="The type of project that is suitable for the candidate Is guidance required for the candidate" required></textarea>
+                    </div>
+
+                    <div class="textarea-wrap">
+                        <h4 class='textarea-header'>Workflow, Leadership and Soft Skills</h4>
+                        <textarea class='textarea' name="" id="" rows="10" placeholder="Describe the environment in which the candidate works. Describe any guidance or management experience."></textarea>
+                    </div>
+
+
+
+
+                    <fieldset class='fieldset'>
+                      <legend class='legend'>OOP, Design Patterns</legend>
                        <div class="fieldset-wrap">
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <select name="classes" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -108,7 +111,7 @@
                                 </div>
                                 <div class="column-30 margin-right">
                                     <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <select name="exception-handling" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -117,7 +120,7 @@
                                 </div>
                                 <div class="column-30 ">
                                     <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <select name="version-control" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -125,12 +128,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Access modifiers</span>
+                                    <select name="access-modifiers" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -138,8 +141,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Design Pattern</span>
+                                    <select name="design-patterns" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -147,8 +150,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Issue Tracking</span>
+                                    <select name="issue-tracking" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -156,12 +159,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Polymorphism</span>
+                                    <select name="polymorphism" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -169,32 +172,32 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>RegEx</span>
+                                    <select name="regex" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
                                         <option value="1">Stuff2</option>
                                     </select>
                                 </div>
-                                
+
                             </div>
                        </div>
-                        
-                        
+
+
                     </fieldset>
-                    
-                    
-                    
-                    <fieldset>
-                        <legend>HTTP</legend>
+
+
+
+                    <fieldset class='fieldset'>
+                        <legend class='legend'>HTTP</legend>
                         <div class="fieldset-wrap">
-                        
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Protocol</span>
+                                    <select name="protocol" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -202,8 +205,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Response codes</span>
+                                    <select name="response-codes" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -211,8 +214,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>REST</span>
+                                    <select name="rest" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -220,12 +223,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Headers</span>
+                                    <select name="headers" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -233,8 +236,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Request methods</span>
+                                    <select name="request-methods" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -242,8 +245,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Sessions &#38; Cookies</span>
+                                    <select name="sessions-cookies" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -251,20 +254,20 @@
                                     </select>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
                     </fieldset>
-                    
-                    
-                    <fieldset>
-                        <legend>HTTP</legend>
+
+
+                    <fieldset class='fieldset'>
+                        <legend class='legend'>HTML</legend>
                         <div class="fieldset-wrap">
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>HTML</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Doctype</span>
+                                    <select name="doctype" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -272,8 +275,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Tags</span>
+                                    <select name="tags" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -281,8 +284,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Basic SEO</span>
+                                    <select name="basic-seo" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -290,12 +293,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Syntax rules</span>
+                                    <select name="syntax-rules" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -303,30 +306,30 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Attributes</span>
+                                    <select name="attributes" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
                                         <option value="1">Stuff2</option>
                                     </select>
                                 </div>
-                               
+
                             </div>
-                            
-                            
+
+
                         </div>
                     </fieldset>
-                    
-                    
-                    <fieldset>
-                        <legend>HTTP</legend>
+
+
+                    <fieldset class='fieldset'>
+                        <legend class='legend'>CSS</legend>
                         <div class="fieldset-wrap">
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>CSS</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Usage</span>
+                                    <select name="usage" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -334,17 +337,17 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Box Modeling</span>
+                                    <select name="box-modeling" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
                                         <option value="1">Stuff2</option>
                                     </select>
                                 </div>
-                                <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                <div class="column-30">
+                                    <span class='description'>CSS 3.0</span>
+                                    <select name="css-3" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -352,12 +355,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
                                     <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <select name="" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -366,7 +369,7 @@
                                 </div>
                                 <div class="column-30 margin-right">
                                     <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <select name="" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -375,7 +378,7 @@
                                 </div>
                                 <div class="column-30 ">
                                     <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <select name="" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -383,20 +386,20 @@
                                     </select>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
                     </fieldset>
-                    
-                    
-                    <fieldset>
-                        <legend>HTTP</legend>
+
+
+                    <fieldset class='fieldset'>
+                        <legend class='legend'>Javascript</legend>
                         <div class="fieldset-wrap">
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Data types and variables</span>
+                                    <select name="data-types" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -404,8 +407,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Object manipulation</span>
+                                    <select name="object-manipulation" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -413,8 +416,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>DOM Manipulation</span>
+                                    <select name="dom-manipulation" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -422,12 +425,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Functions</span>
+                                    <select name="functions" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -435,8 +438,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Templating</span>
+                                    <select name="templating" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -444,8 +447,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Event Handling</span>
+                                    <select name="evemt=handling" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -453,12 +456,12 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Prototype and OOP</span>
+                                    <select name="prototype" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -466,8 +469,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Testing(unit, E2E)</span>
+                                    <select name="testing" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -475,38 +478,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row1">
-                                
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
-                                        <option value="">Evaluation</option>
-                                        <option value="0">Stuff1</option>
-                                        <option value="1">Stuff2</option>
-                                        <option value="1">Stuff2</option>
-                                    </select>
-                                </div>
-                                <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>AJAX</span>
+                                    <select name="ajax" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -515,10 +488,10 @@
                                 </div>
                             </div>
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Debugging</span>
+                                    <select name="debug" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -526,8 +499,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Websockets</span>
+                                    <select name="" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -535,8 +508,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Tooling</span>
+                                    <select name="tooling" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -545,31 +518,61 @@
                                 </div>
                             </div>
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Libraries</span>
+                                    <select name="libraries" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
                                         <option value="1">Stuff2</option>
                                     </select>
                                 </div>
-                                
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Promises</span>
+                                    <select name="promises" class="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+                                <div class="column-30 ">
+                                    <span class='description'>Browser Engines</span>
+                                    <select name="browser-engines" class="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
                             </div>
-                            
-                            
+                            <div class="row1">
+
+                                <div class="column-30 margin-right">
+                                    <span class='description'>Frameworks</span>
+                                    <select name="frameworks" class="select">
+                                        <option value="">Evaluation</option>
+                                        <option value="0">Stuff1</option>
+                                        <option value="1">Stuff2</option>
+                                        <option value="1">Stuff2</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
                         </div>
                     </fieldset>
-                    
-                    <fieldset>
-                        <legend>HTTP</legend>
+
+                    <fieldset class='fieldset'>
+                        <legend class='legend'>NodeJS</legend>
                         <div class="fieldset-wrap">
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>CSS</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Backend frameworks</span>
+                                    <select name="backend-frameworks" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -577,8 +580,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Exception handling</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Templating</span>
+                                    <select name="templating" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -586,8 +589,8 @@
                                     </select>
                                 </div>
                                 <div class="column-30 ">
-                                    <span class='description'>Version Control</span>
-                                    <select name="" id="select">
+                                    <span class='description'>DOM Manipulation</span>
+                                    <select name="dom-manipulation" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
@@ -595,41 +598,48 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="row1">
-                                
+
                                 <div class="column-30 margin-right">
-                                    <span class='description'>Classes</span>
-                                    <select name="" id="select">
+                                    <span class='description'>Unit Testing</span>
+                                    <select name="unit-testing" class="select">
                                         <option value="">Evaluation</option>
                                         <option value="0">Stuff1</option>
                                         <option value="1">Stuff2</option>
                                         <option value="1">Stuff2</option>
                                     </select>
                                 </div>
-                                
+
                             </div>
-                            
-                            
+
+
                         </div>
                     </fieldset>
-                    
-                    </div>
-                
-                
-                
-                <input type="submit" class='button' value='Login'>
-                
+
+
+
+
+                <div class="button-wrap">
+                    <input type="submit" class='submit-button' value='Submit'>
+                </div>
+
+
               </form>
                 </div>
-                
-              </div>
-               
-           </div>
-            
-    </section>
-    
 
-    
+              </div>
+
+           </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <p class="footer-paragraph">Copyright@softvision 2017</p>
+        </div>
+    </footer>
+
+
+
 </body>
 </html>

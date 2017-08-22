@@ -5,88 +5,95 @@
     <title>Evaluation</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sass-architecture/css/main.css">
+    <link rel="stylesheet" href="sass-architecture/css/he.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    
-    <nav class="menu">
-        
-         <div class="container" id='height-100'>
-           <div class="row" id='height-100'>
-               <div class="col-sm-12 position-div" id='height-100'>
-                   <div class="one"><a href="#0">Evaluations</a></div>
-                   <div class="two"><a href="new-evaluation-zero.html">New Evaluations</a></div>
-               </div>
-           </div>
 
-         </div>
-        
-        <ul class='down-ul'>
-            <li><a href="index.html"><img src="assets/126-Softvision-logo.png"
-             alt=""></a></li>
-             <li id='logout'>Logout</li>
-        </ul>
-    </nav>
-    
-    <section class="table">
+    <nav class='navbar'>
+        <a href="index.html"><img src="assets/126-Softvision-logo.png" alt="" class="image"></a>
+        <a class='link-logout' href="#">Logout</a>
         <div class="container">
-            <div class="row-flex1">
-                <table>
-                    <thead>
-                        <tr id="table-row">
-                            <th>Nume</th>
-                            <th>Tehnologie</th>
-                            <th>Nivel</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id='tbody'>
-                        <tr>
-                            <td>Popescu Adrian</td>
-                            <td>Javascript</td>
-                            <td>Mid 2</td>
-                            <td class='detalii'>Detalii 
-                                <div><span><a class='plus-sign' href="#">+</a></span></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Popescu Adrian</td>
-                            <td>Javascript</td>
-                            <td>Mid 2</td>
-                            <td class='detalii'>Detalii 
-                                <div><span><a class='plus-sign' href="#">+</a></span></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Popescu Adrian</td>
-                            <td>Javascript</td>
-                            <td>Mid 2</td>
-                            <td class='detalii'>Detalii 
-                                <div><span><a class='plus-sign' href="#">+</a></span></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Popescu Adrian</td>
-                            <td>Javascript</td>
-                            <td>Mid 2</td>
-                            <td class='detalii'>Detalii 
-                                <div><span><a class='plus-sign' href="#">+</a></span></div>
-                            </td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="row">
+                <div class='link-block-wrapper'>
+                    <a class='link-block' href="#0">Evaluations</a>
+                    <a class='link-block' href="new-evaluation-zero.html">New Evaluations</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="table">
+        <div class="container full-width">
+            <div class="row">
+                <div class="col-md-12">
+                    <table>
+                        <thead>
+                            <tr class="table-head-row">
+                                <th>Nume</th>
+                                <th>Tehnologie</th>
+                                <th>Nivel</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class='table-body'>
+                            <tr class='table-body-tr'>
+                                <td>Popescu Adrian</td>
+                                <td>Javascript</td>
+                                <td>Mid 2</td>
+                                <td class='detalii'>Detalii
+                                    <a href="#" class="button-toggle plus-button">
+                                        <span class="minus-toggle"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class='table-body-tr'>
+                                <td>Popescu Adrian</td>
+                                <td>Javascript</td>
+                                <td>Mid 2</td>
+                                <td class='detalii'>Detalii 
+                                    <a href="#" class="button-toggle plus-button">
+                                        <span class="minus-toggle"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class='table-body-tr'>
+                                <td>Popescu Adrian</td>
+                                <td>Javascript</td>
+                                <td>Mid 2</td>
+                                <td class='detalii'>Detalii 
+                                    <a href="#" class="button-toggle plus-button">
+                                        <span class="minus-toggle"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class='table-body-tr'>
+                                <td>Popescu Adrian</td>
+                                <td>Javascript</td>
+                                <td>Mid 2</td>
+                                <td class='detalii'>Detalii 
+                                    <a href="#" class="button-toggle plus-button">
+                                        <span class="minus-toggle"></span>
+                                    </a>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
-    
-    <footer id='fixed-footer'>
+
+    <footer class='fixed-footer'>
         <div class="container">
             <p class="footer-paragraph">Copyright@softvision 2017</p>
         </div>
     </footer>
-    
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> 
-<script src='plus.js'></script>   
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='plus.js'></script>
 </body>
 </html>
