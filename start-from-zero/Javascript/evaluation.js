@@ -1,20 +1,3 @@
-const Nav = function(){
-    return `
-    <nav class='navbar'>
-        <a href="index.html"><img src="assets/126-Softvision-logo.png" alt="" class="image"></a>
-        <a class='link-logout' href="#">Logout</a>
-        <div class="container">
-            <div class="row">
-                <div class='link-block-wrapper'>
-                    <a class='link-block' href="#0">Evaluations</a>
-                    <a class='link-block' href="new-evaluation-zero.html">New Evaluations</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    `;
-}
-
 
 const TableHeadElement = function(options){
     const tableHead = [];
@@ -97,20 +80,12 @@ const EvaluationPageTable = function(){
     `;
 }
 
-const Footer = function(){
-    return `
-    <footer class='fixed-footer'>
-        <div class="container">
-            <p class="footer-paragraph">Copyright@softvision 2017</p>
-        </div>
-    </footer>
-    `;
-}
+
 
 
 const EvaluationPage = function(){
     return `
-        ${Nav()}
+        ${NAV()}
         ${EvaluationPageTable()}
         ${Footer()}
     `;
