@@ -1,89 +1,148 @@
 function NewEvaluationPage(options){
-    
-    const elements = [
-        {level:'Trainee'},{level:'Junior'},{level:'Middle'}, {level:'Senior'}
-    ];
+    const technicalData = {
+        title: 'Technical Level',
+        headers: ['Trainee','Junior','Middle','Senior'],
+        columnData: [
+            {
+                inputLevels: ['Trainee']
+            },
+            {
+                inputLevels: ['Junior1','Junior2','Junior3']
+            },
+            {
+                inputLevels: ['Middle1','Middle2','Middle3']
+            },
+            {
+                inputLevels: ['Senior1','Senior2','Senior3']
+            },
+        ]
+    }
 
-    const description = [
-        {
-            selectDescription: 'Evaluation',
-            values: ['1','2','3','4'], 
-            language: ['javascript','Java','Haskell']
-        },
-        {
-            selectDescription: 'Exception handling',
-            values: ['1','2','3','4'],
-            language: ['javascript','Java','Haskell']
-        },
-        {
-            selectDescription: 'Version Control',
-            values: ['1','2','3','4'],
-            language: ['javascript','Java','Haskell']
-        },
-        {
-            selectDescription: 'Access modifiers',
-            values: ['1','2','3','4'],
-            language: ['javascript','Java','Haskell']
-        },
-        {
-            selectDescription: 'Design Pattern',
-            values: ['1','2','3','4'],
-            language: ['javascript','Java','Haskell']
-        },
-        {
-            selectDescription: 'Design Pattern',
-            values: ['1','2','3','4'],
-            language: ['javascript','Java','Haskell']
-        },
-        {
-            selectDescription: 'Polymorphism',
-            values: ['1','2','3','4'],
-            language: ['javascript','Java','Haskell']
-        },
-        {
-            selectDescription: 'RegEx',
-            values: ['1','2','3','4'],
-            language: ['ddsa','dasqwre','dsar']
-        }
+    const textarea = {
+        
+        text: [
+            {
+                label: 'Should the candidate be hired?',
+                placeholder: 'The type of project that is suitable for the candidate Is guidance required for the candidate'
+            },
+            {
+                label: 'General impression',
+                placeholder: 'The type of project that is suitable for the candidate Is guidance required for the candidate'
+            },
+            {
+                label: 'Workflow, Leadership and Soft Skills',
+                placeholder: 'Describe the environment in which the candidate works. Describe any guidance or management experience.'
+            }
+        ]
+        
+    }
 
-    ];
-
-
-
+    const fieldset = {
+        fieldset: [
+            {
+                legend: 'OOP, Design Patterns',
+                description: 'Classes',
+                select: [
+                    {
+                        name: ['classes','description','exception-handling','version-control']
+                    }
+                ],
+                option: [
+                    {
+                        value: ['1','2','3']
+                    }
+                ]
+            },
+            
+        ],
+        
+    }
 
     const newOptions = options || {};
     return `
     ${NAV()}
+    ${TechnicalLevelPicker(
+        technicalData
+    )}
+    ${TextArea(
+        textarea
+    )}
     ${NewEvaluationTable({
-        el: elements,
-        des: description
+    
     })}
+    
     ${FooterNew()}
-
 
     `;
 }
 
 
-
-const TechnicalLevel = function(options={}){
-    const technical = [];
-    options.el.forEach(function(n){
-        technical.push(`<td class='technical-level-td'>${n.level}</td>`);
-    });
-    return technical.join('');
-    
+const TableData = function(options = {}){
+    const td = options.headers.map(function(el){
+        return `
+            <td class='technical-level-td'>${el}</td>
+        `;
+    }).join('');
+    return td;
 }
 
-const OptionLevel = function(options={}){
-    const optionArr = [];
-    options.des.forEach(function(j){
-        optionArr.push(`
-            <option value="${j.values}">${j.language}</option>
+const TableCheckbox = function(options = {}){
+    
+    const newArr =[];
+    options.columnData.forEach(function(d){
+        newArr.push(`
+            <td>
+                ${d.inputLevels.map(function (j) {
+                return `
+                    <input class='input-checkbox' type="checkbox" name='${j}'>
+                `}).join('')}
+            </td>
         `);
     })
-    return optionArr.join('');
+    return newArr.join('');
 }
+    
+
+const TechnicalLevelPicker = function(options = {}){
+    return `
+    <h4 class='technical-header'>${options.title}</h4>
+    <table class='technical-level-table'>
+
+        <tbody class='tbody-new'>
+            <tr class='technical-level'>
+                ${TableData({headers: options.headers})}
+            </tr>
+
+
+            <tr class="technical-level-category">
+                ${TableCheckbox({columnData: options.columnData})}
+            </tr>
+        </tbody>
+    </table>
+    `;
+}
+
+const TextareaElements = function(options={}){
+    const textArr =[];
+    options.textarea.forEach(function(d){
+        textArr.push(`
+            <div class="textarea-wrap">
+            <h4 class='textarea-header'>${d.label}</h4>
+            <textarea class='textarea' name="" id="" rows="10" placeholder="${d.placeholder}"></textarea>
+            <div>
+        `);
+    })
+    return textArr.join('');
+}
+
+const TextArea = function(options={}){
+        return `
+        ${TextareaElements({textarea: options.text})}
+        `
+}
+
+const 
+
 
 
 const NewEvaluationTable = function(options = {}){
@@ -98,45 +157,6 @@ const NewEvaluationTable = function(options = {}){
                     <input class='input-password' type="password" name='password' placeholder="Password">
                     <input class='input-calendar' type="date">
                 </div>
-
-
-                <h4 class='technical-header'>Technical Level</h4>
-                <table class='technical-level-table'>
-
-                    <tbody class='tbody-new'>
-                        <tr class='technical-level'>
-                        
-                            ${TechnicalLevel({
-                                el: options.el
-                            })}
-                        </tr>
-
-
-                        <tr class="technical-level-category">
-                            <td>
-                                <input class='input-checkbox' type="checkbox" name='trainee'>
-                            </td>
-                            <td>
-                                <input class='input-checkbox' type="checkbox" name='junior1'>
-                                <input class='input-checkbox' type="checkbox" name='junior2'>
-                                <input class='input-checkbox' type="checkbox" name='junior3'>
-                            </td>
-                            <td>
-                                <input class='input-checkbox' type="checkbox" name='middle1'>
-                                <input class='input-checkbox' type="checkbox" name='middle2'>
-                                <input class='input-checkbox' type="checkbox" name='middle3'>
-                            </td>
-                            <td>
-                                <input class='input-checkbox' type="checkbox" name='senior1'>
-                                <input class='input-checkbox' type="checkbox" name='senior2'>
-                                <input class='input-checkbox' type="checkbox" name='senior3'>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-
 
                 <div class="textarea-wrap">
                     <h4 class='textarea-header'>Should the candidate be hired?</h4>
@@ -163,10 +183,7 @@ const NewEvaluationTable = function(options = {}){
 
                             <div class="column-30 margin-right">
                                 <span class='description'>CHECK THISS</span>
-                                ${OptionLevel({
-                                    des: options.des
-                                })}
-                                
+                               
                                 
                                 
                             </div>
