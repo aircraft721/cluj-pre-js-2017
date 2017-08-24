@@ -38,21 +38,308 @@ function NewEvaluationPage(options){
     }
 
     const fieldset = {
-        fieldset: [
+        data: [
             {
-                legend: 'OOP, Design Patterns',
-                description: 'Classes',
-                select: [
+                fieldsetName: 'OOP, Design Patterns',
+                items: [
                     {
-                        name: ['classes','description','exception-handling','version-control']
-                    }
-                ],
-                option: [
+                        span: 'Classes',
+                        name: 'classes',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
                     {
-                        value: ['1','2','3']
+                        span: 'Exception handling',
+                        name: 'exception-handling',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Version Control',
+                        name: 'version-control',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Access modifiers',
+                        name: 'access-modifiers',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Design Pattern',
+                        name: 'design-patterns',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Issue Tracking',
+                        name: 'issue-tracking',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Polymorphism',
+                        name: 'polymorphism',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'RegEx',
+                        name: 'regex',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                ]
+            },
+            {
+                fieldsetName: 'HTTP',
+                items: [
+                    {
+                        span: 'Protocol',
+                        name: 'protocol',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Response codes',
+                        name: 'response-codes',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'REST',
+                        name: 'rest',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Headers',
+                        name: 'headers',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Request methods',
+                        name: 'request-methods',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                ]
+            },
+            {
+                fieldsetName: 'HTML',
+                items: [
+                    {
+                        span: 'Doctype',
+                        name: 'doctype',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Tags',
+                        name: 'tags',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Basic SEO',
+                        name: 'basic-seo',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Syntax rules',
+                        name: 'syntax-rules',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Attributes',
+                        name: 'attributes',
+                        voptionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                ]
+            },
+            {
+                fieldsetName: 'CSS',
+                items: [
+                    {
+                        span: 'Usage',
+                        name: 'usage',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Box Modeling',
+                        name: 'box-modeling',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'CSS 3.0',
+                        name: 'css-3',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Classes',
+                        name: 'classes',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Selectors',
+                        name: 'selectors',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Styling',
+                        name: 'styling',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Dynamic stylesheet',
+                        name: 'dynamic-stylesheet',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
                     }
                 ]
             },
+            {
+                fieldsetName: 'Javascript',
+                items: [
+                    {
+                        span: 'Data types and variables',
+                        name: 'data-types',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Object manipulation',
+                        name: 'object-manipulation',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'DOM Manipulation',
+                        name: 'dom-manipulation',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Functions',
+                        name: 'functions',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Templating',
+                        name: 'templating',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Event Handling',
+                        name: 'evemt-handling',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Prototype and OOP',
+                        name: 'prototype',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Testing(unit, E2E)',
+                        name: 'testing',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'AJAX',
+                        name: 'ajax',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Debugging',
+                        name: 'debug',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Websockets',
+                        name: 'websockets',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Tooling',
+                        name: 'tooling',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Libraries',
+                        name: 'libraries',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Promises',
+                        name: 'promises',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Browser Engines',
+                        name: 'browser-engines',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell']  
+                    },
+                    {
+                        span: 'Frameworks',
+                        name: 'frameworks',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    }
+                ]
+            },
+            {
+                fieldsetName: 'NodeJS',
+                items: [
+                    {
+                        span: 'Backend frameworks',
+                        name: 'backend-frameworks',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Templating',
+                        name: 'templating',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'DOM Manipulation',
+                        name: 'dom-manipulation',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    },
+                    {
+                        span: 'Unit Testing',
+                        name: 'unit-testing',
+                        optionValue: ['0','1','2','3'],
+                        dropdown: ['Javascript','Java','Python','Haskell'] 
+                    }
+                ]
+            },
+
             
         ],
         
@@ -61,15 +348,40 @@ function NewEvaluationPage(options){
     const newOptions = options || {};
     return `
     ${NAV()}
+    <section class="form-candidate">
+    <div class="container">
+       <div class="row">
+            <div class="col-md-12">
+                <form action="" class="user-input" method='post'>
+                <div class="field-ev">
+                    <input class='input-username' type="text" name='username' placeholder="Username">
+                    <input class='input-password' type="password" name='password' placeholder="Password">
+                    <input class='input-calendar' type="date">
+                </div>
     ${TechnicalLevelPicker(
         technicalData
     )}
     ${TextArea(
         textarea
     )}
-    ${NewEvaluationTable({
-    
-    })}
+
+    ${SelectOption(
+        fieldset
+    )}
+
+                        <div class="button-wrap">
+                            <input type="submit" class='submit-button' value='Submit'>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
     
     ${FooterNew()}
 
@@ -105,6 +417,7 @@ const TableCheckbox = function(options = {}){
 
 const TechnicalLevelPicker = function(options = {}){
     return `
+    
     <h4 class='technical-header'>${options.title}</h4>
     <table class='technical-level-table'>
 
@@ -141,585 +454,49 @@ const TextArea = function(options={}){
         `
 }
 
-const 
 
-
-
-const NewEvaluationTable = function(options = {}){
-    return `
-<section class="form-candidate">
-    <div class="container">
-       <div class="row">
-            <div class="col-md-12">
-                <form action="" class="user-input" method='post'>
-                <div class="field-ev">
-                    <input class='input-username' type="text" name='username' placeholder="Username">
-                    <input class='input-password' type="password" name='password' placeholder="Password">
-                    <input class='input-calendar' type="date">
-                </div>
-
-                <div class="textarea-wrap">
-                    <h4 class='textarea-header'>Should the candidate be hired?</h4>
-                    <textarea class='textarea' name="" id="" rows="10" placeholder="The type of project that is suitable for the candidate Is guidance required for the candidate"></textarea>
-                </div>
-
-                <div class="textarea-wrap">
-                    <h4 class='textarea-header'>General impression</h4>
-                    <textarea class='textarea' name="" id="" rows="10" placeholder="The type of project that is suitable for the candidate Is guidance required for the candidate" required></textarea>
-                </div>
-
-                <div class="textarea-wrap">
-                    <h4 class='textarea-header'>Workflow, Leadership and Soft Skills</h4>
-                    <textarea class='textarea' name="" id="" rows="10" placeholder="Describe the environment in which the candidate works. Describe any guidance or management experience."></textarea>
-                </div>
-
-
-
-
-                <fieldset class='fieldset'>
-                  <legend class='legend'>OOP, Design Patterns</legend>
-                   <div class="fieldset-wrap">
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>CHECK THISS</span>
-                               
-                                
-                                
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Exception handling</span>
-                                <select name="exception-handling" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Version Control</span>
-                                <select name="version-control" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Access modifiers</span>
-                                <select name="access-modifiers" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Design Pattern</span>
-                                <select name="design-patterns" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Issue Tracking</span>
-                                <select name="issue-tracking" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Polymorphism</span>
-                                <select name="polymorphism" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>RegEx</span>
-                                <select name="regex" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-
-                        </div>
-                   </div>
-
-
-                </fieldset>
-
-
-
-                <fieldset class='fieldset'>
-                    <legend class='legend'>HTTP</legend>
-                    <div class="fieldset-wrap">
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Protocol</span>
-                                <select name="protocol" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Response codes</span>
-                                <select name="response-codes" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>REST</span>
-                                <select name="rest" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Headers</span>
-                                <select name="headers" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Request methods</span>
-                                <select name="request-methods" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Sessions &#38; Cookies</span>
-                                <select name="sessions-cookies" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </fieldset>
-
-
-                <fieldset class='fieldset'>
-                    <legend class='legend'>HTML</legend>
-                    <div class="fieldset-wrap">
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Doctype</span>
-                                <select name="doctype" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Tags</span>
-                                <select name="tags" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Basic SEO</span>
-                                <select name="basic-seo" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Syntax rules</span>
-                                <select name="syntax-rules" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Attributes</span>
-                                <select name="attributes" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </fieldset>
-
-
-                <fieldset class='fieldset'>
-                    <legend class='legend'>CSS</legend>
-                    <div class="fieldset-wrap">
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Usage</span>
-                                <select name="usage" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Box Modeling</span>
-                                <select name="box-modeling" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30">
-                                <span class='description'>CSS 3.0</span>
-                                <select name="css-3" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Classes</span>
-                                <select name="" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Exception handling</span>
-                                <select name="" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Version Control</span>
-                                <select name="" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </fieldset>
-
-
-                <fieldset class='fieldset'>
-                    <legend class='legend'>Javascript</legend>
-                    <div class="fieldset-wrap">
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Data types and variables</span>
-                                <select name="data-types" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Object manipulation</span>
-                                <select name="object-manipulation" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>DOM Manipulation</span>
-                                <select name="dom-manipulation" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Functions</span>
-                                <select name="functions" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Templating</span>
-                                <select name="templating" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Event Handling</span>
-                                <select name="evemt=handling" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Prototype and OOP</span>
-                                <select name="prototype" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Testing(unit, E2E)</span>
-                                <select name="testing" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>AJAX</span>
-                                <select name="ajax" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Debugging</span>
-                                <select name="debug" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Websockets</span>
-                                <select name="" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Tooling</span>
-                                <select name="tooling" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Libraries</span>
-                                <select name="libraries" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Promises</span>
-                                <select name="promises" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>Browser Engines</span>
-                                <select name="browser-engines" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Frameworks</span>
-                                <select name="frameworks" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </fieldset>
-
-                <fieldset class='fieldset'>
-                    <legend class='legend'>NodeJS</legend>
-                    <div class="fieldset-wrap">
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Backend frameworks</span>
-                                <select name="backend-frameworks" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 margin-right">
-                                <span class='description'>Templating</span>
-                                <select name="templating" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                            <div class="column-30 ">
-                                <span class='description'>DOM Manipulation</span>
-                                <select name="dom-manipulation" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row1">
-
-                            <div class="column-30 margin-right">
-                                <span class='description'>Unit Testing</span>
-                                <select name="unit-testing" class="select">
-                                    <option value="">Evaluation</option>
-                                    <option value="0">Stuff1</option>
-                                    <option value="1">Stuff2</option>
-                                    <option value="1">Stuff2</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </fieldset>
-
-
-
-
-            <div class="button-wrap">
-                <input type="submit" class='submit-button' value='Submit'>
-            </div>
-
-
-          </form>
-            </div>
-
-          </div>
-
-       </div>
-
-</section>
-
-    `;
+const TechnicalAreaPicker = function(options = {}){
+    const fieldsets = options.fieldsetObj.map((n)=>{
+        return `
+        <fieldset class='fieldset'>
+            <legend class='legend'>${n.fieldsetName}</legend>
+
+                ${n.items.map(function(o){
+                    return `
+                    <div class="column-30 margin-right">
+                    <span class='description'>${o.span}</span>
+                    <select name="${o.name}" class="select">
+                        ${o.dropdown.map(function(g,i){
+                            return `
+                                <option value="${i}">${g}</option>
+                            `
+                        }).join('')}
+                        
+                    </select>
+                    </div> 
+                    `
+                }).join('')}
+
+            <div class="fieldset-wrap"></div>
+        </fieldset>`
+    });
+    
+    return fieldsets.join('');
 }
+
+
+
+
+const SelectOption = function(options = {}){
+    return `
+        ${TechnicalAreaPicker({fieldsetObj: options.data})}
+    `
+}
+
 
 const NewEvaluationPageAll = function(){
     return `
-        
         ${NewEvaluationPage()}
-        
     `;
 }
 
