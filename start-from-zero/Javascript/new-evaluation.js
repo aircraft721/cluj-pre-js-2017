@@ -1,4 +1,4 @@
-const Nav = function(){
+const Nav = function () {
     return `
     <nav class='navbar'>
         <a href="index.html"><img src="assets/126-Softvision-logo.png" alt="" class="image"></a>
@@ -13,10 +13,10 @@ const Nav = function(){
         </div>
     </nav>
     `;
-}
+};
 
 
-const FormCandidate = function(){
+const FormCandidate = function () {
     return `
     <section class="form-candidate">
         <div class="container">
@@ -32,10 +32,10 @@ const FormCandidate = function(){
         </div>
     </section>
     `;
-}
+};
 
 
-const UserInput = function(){
+const UserInput = function () {
     return `
     <div class="field-ev">
         <input class='input-username' type="text" name='username' placeholder="Username">
@@ -43,50 +43,10 @@ const UserInput = function(){
         <input class='input-calendar' type="date">
     </div>
     `;
-}
+};
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Footer = function(){
+const Footer = function () {
     return `
     <footer>
         <div class="container">
@@ -94,4 +54,4 @@ const Footer = function(){
         </div>
     </footer>
     `;
-}
+};

@@ -116,7 +116,7 @@ function EvaluationsTable(options={}){
 
 
 window.onload = function(){
-    const appEl = document.querySelector('#app');
-    appEl.innerHTML = EvaluationsPage();
+    const app = document.querySelector('#app');
+    app.innerHTML = EvaluationsPage();
 }
 
