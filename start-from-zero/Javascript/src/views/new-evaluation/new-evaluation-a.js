@@ -1,18 +1,32 @@
 function NewEvaluationPage(options) {
-    const inputPlaceholder =
-    {
-        inputs: [
+
+    const inputPlaceholder = {
+
+        media: [
             {
-                user: ['username', 'password', 'date'],
+                user: 'Username',
+                class: 'input-username',
+                placeholder: 'Username',
+                type: 'text'
             },
             {
-                placeholder: ['Username', 'Password', ''],
+                user: 'password',
+                class: 'input-password',
+                placeholder: 'Password',
+                type: 'text'
             },
             {
-                type: ['text', 'password', 'date'],
+                type: 'date',
+                class: 'input-calendar',
+                placeholder: '',
+                type: 'date'
             },
         ],
-    };
+
+        user: ['username', 'password', 'date'],
+        placeholder: ['Username', 'Password', ''],
+        type: ['text', 'password', 'date'],
+    }
 
 
     const technicalData = {
@@ -369,13 +383,13 @@ function NewEvaluationPage(options) {
        <div class="row">
             <div class="col-md-12">
                 <form action="" class="user-input" method='post'>
-                <div class="field-ev">
-                    <input class='input-username' type="text" name='username' placeholder="Username">
-                    <input class='input-password' type="password" name='password' placeholder="Password">
-                    <input class='input-calendar' type="date">
-                </div>
+                
    
     
+    ${Inputs(
+        inputPlaceholder
+    )}
+
     ${TechnicalLevelPicker(
         technicalData,
     )}
@@ -401,7 +415,7 @@ function NewEvaluationPage(options) {
 
     </section>
     
-    ${FooterNew()}
+    ${Footer()}
     `;
 }
 
@@ -502,24 +516,26 @@ const TechnicalAreaPicker = function (options = {}) {
     return fieldsets.join('');
 };
 
-// const InputFunction = function(options = {}){
-//     const input = options.inputs.forEach(function(n){
-//         return `${n.map(function(d){
-//             return `
-//             <input class='input-username' type="${d.type}" name='${d.name}' placeholder="${d.placeholder}">
-//             `
-//         })}`
+const InputFunction = function(options = {}){
+    const input = options.inputs.map((d) => {
+        return `
+            <input class='${d.class}' type="${d.type}" name='${d.name}' placeholder="${d.placeholder}">
+            `
+    })
+        
 
-//     })
-//     return input.join('');
-// }
+    
+    return input.join('');
+}
 
 
-// const Inputs = function(options = {}){
-//     return `
-//         ${InputFunction({inputs: options.inputs})}
-//     `
-// }
+const Inputs = function(options = {}){
+    return `
+    <div class="field-ev">
+        ${InputFunction({inputs: options.media})}
+    </div>
+    `
+}
 
 
 const SelectOption = function (options = {}) {
@@ -530,9 +546,7 @@ const SelectOption = function (options = {}) {
 
 
 const NewEvaluationPageAll = function () {
-    return `
-        ${NewEvaluationPage()}
-    `;
+    return NewEvaluationPage();
 };
 
 window.onload = function () {
