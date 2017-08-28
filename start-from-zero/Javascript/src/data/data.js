@@ -5,26 +5,28 @@ function InputData(){
             {
                 user: 'Username',
                 class: 'input-username',
+                id: 'username-id',
+                name: 'username',
                 placeholder: 'Username',
                 type: 'text'
             },
             {
                 user: 'password',
                 class: 'input-password',
+                id: 'password-id',
+                name: 'password',
                 placeholder: 'Password',
                 type: 'text'
             },
             {
                 type: 'date',
                 class: 'input-calendar',
+                name: 'calendar',
+                id: 'calendar-id',
                 placeholder: '',
                 type: 'date'
             },
         ],
-
-        user: ['username', 'password', 'date'],
-        placeholder: ['Username', 'Password', ''],
-        type: ['text', 'password', 'date'],
     }
     return inputPlaceholder;
 }
@@ -56,14 +58,17 @@ function TextareaData(){
         text: [
             {
                 label: 'Should the candidate be hired?',
+                id: 'textarea1',
                 placeholder: 'The type of project that is suitable for the candidate Is guidance required for the candidate',
             },
             {
                 label: 'General impression',
+                id: 'textarea2',
                 placeholder: 'The type of project that is suitable for the candidate Is guidance required for the candidate',
             },
             {
                 label: 'Workflow, Leadership and Soft Skills',
+                id: 'textarea3',
                 placeholder: 'Describe the environment in which the candidate works. Describe any guidance or management experience.',
             },
         ],

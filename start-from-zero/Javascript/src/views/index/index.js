@@ -5,19 +5,27 @@ function redirectToEvaluation(){
         e.stopPropagation();
         e.preventDefault();
         app.innerHTML = EvaluationsPage();
-        redirectToLogin();
+        //redirectToLogin();
         redirectToNewEvaluation();
     });
 }
 
 function redirectToNewEvaluation(){
+    app.innerHTML = EvaluationsPage();
     const newEvaluations = document.querySelector('.new-evaluations-page');
     newEvaluations.addEventListener('click',function(e){
         e.stopPropagation();
         e.preventDefault();
         app.innerHTML = NewEvaluationPageAll();
-        redirectToLogin();
+        //redirectToLogin();
         redirectToEvaluation();
+        btn.addEventListener('click',function(e){
+            const username = document.getElementById('username-id').value;
+            const password = document.getElementById('password-id').value;
+            alert(username);
+            alert(password);
+        })
+    
     });
 }
 
@@ -35,9 +43,9 @@ function redirectLoginToEvaluation(){
     loginButton.addEventListener('click',function(e){
         e.stopPropagation();
         e.preventDefault();
-        app.innerHTML = EvaluationsPage();
         redirectToNewEvaluation();
-        //redirectToLogin();
+        redirectToLogin();
+
     });
 }
 
@@ -45,4 +53,7 @@ window.addEventListener('load' ,function () {
     const app = document.querySelector('#app'); 
     app.innerHTML = Login();
     redirectLoginToEvaluation();   
+    const btn = document.getElementById('btn');
+    
+    
 });
