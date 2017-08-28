@@ -50,7 +50,7 @@ function EvaluationTableRow(options={}){
     <tr class='table-body-tr'>
         <td>${options.name}</td>
         <td>${options.language}</td>
-        <td>${options.level} 2</td>
+        <td>${options.level}</td>
         <td class='detalii'>Detalii 
             <a href="#" class="button-toggle plus-button">
                 <span class="minus-toggle"></span>

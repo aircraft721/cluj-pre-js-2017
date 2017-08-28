@@ -6,7 +6,7 @@ function NewEvaluationPage(options) {
     <div class="container">
        <div class="row">
             <div class="col-md-12">
-                <form action="" class="user-input" method='post'>
+                <form action="" class="user-input" id='form-new' method='post'>
     ${Inputs(
         InputData()
     )}
@@ -45,7 +45,7 @@ const TableCheckbox = function (options = {}) {
         checkboxArr.push(`
             <td>
                 ${d.inputLevels.map((j) => `
-                    <input class='input-checkbox' type="checkbox" name='${j}'>
+                    <input class='input-checkbox' type="radio" name='radio' value='${j}'>
                 `).join('')}
             </td>
         `);
