@@ -27,8 +27,8 @@ const NAV = function(options={}){
         <div class="container">
             <div class="row">
                 <div class='link-block-wrapper'>
-                    <a class='link-block evaluations-page' href="">Evaluations</a>
-                    <a class='link-block new-evaluations-page' href="">New Evaluations</a>
+                    <a class='link-block evaluations-page' href="#">Evaluations</a>
+                    <a class='link-block new-evaluations-page' href="#">New Evaluations</a>
                 </div>
             </div>
         </div>
