@@ -1,4 +1,4 @@
-const LoginForm = function(){
+const LoginForm = function () {
     return `
     <div class="col-md-3 form-column">
         <div class="blue-line">Interview Feedback</div>
@@ -13,9 +13,9 @@ const LoginForm = function(){
             <input type="submit" class='button-login-form' value='Login'>
         </form>
     </div>`;
-}
+};
 
-const LoginHeader = function(){
+const LoginHeader = function () {
     return `
         <section class="hero-image-section">
             <div class="container">
@@ -25,9 +25,9 @@ const LoginHeader = function(){
             </div>
         </section>    
     `;
-}
+};
 
-const SubmitFeedbackSection = function(){
+const SubmitFeedbackSection = function () {
     return `
     <section class="new-feedback">
         <div class="container">
@@ -51,9 +51,9 @@ const SubmitFeedbackSection = function(){
         </div>
     </section>
     `;
-}
+};
 
-const SubmitFeedbackResults = function(){
+const SubmitFeedbackResults = function () {
     return `
     <section class="result-feedback">
         <div class="container">
@@ -78,31 +78,19 @@ const SubmitFeedbackResults = function(){
         </div>
     </section>
     `;
-}
+};
 
 
-const Footer = function(){
-    return `
-    <footer>
-        <div class="container">
-            <p class="footer-paragraph">Copyright@softvision 2017</p>
-        </div>
-    </footer>
-    `;
-}
-
-const LoginPage = function(){
+function Login() {
     return `
         ${LoginHeader()}
         ${SubmitFeedbackSection()}
         ${SubmitFeedbackResults()}
         ${Footer()}
     `;
-    
-    
-}
+};
 
-window.onload = function(){
+window.onload = function () {
     const app = document.querySelector('#app');
-    app.innerHTML = LoginPage();
-}
+    app.innerHTML = Login();
+};

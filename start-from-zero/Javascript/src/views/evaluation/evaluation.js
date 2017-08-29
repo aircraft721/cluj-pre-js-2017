@@ -26,7 +26,7 @@ function EvaluationsPage(options){
         items: rows,
         itemHeadings: headings
     })}
-    ${Footer()}
+    ${FooterFixed()}
 
 
     `;
@@ -34,7 +34,7 @@ function EvaluationsPage(options){
 
 function EvaluationTableHeader(options){
     const headings = [];
-    options.headings.forEach(function(el){
+    options.headings.map((el)=>{
         const generatedEl = `<th class='table-head-element'>${el}</th>`;
         headings.push(generatedEl);
         
@@ -77,11 +77,7 @@ function EvaluationTableBody(options={}){
     const rowsElements = options.items.map(function(rowObj){
         return EvaluationTableRow(rowObj);
     })
-    // const rowsElements = [];
-    // options.items.forEach(function(rowObj){
-    //     const generatedRow = EvaluationTableRow(rowObj);
-    //     rowsElements.push(generatedRow);
-    // });
+
     const rowsEl = rowsElements.join('');
 
     return `
@@ -116,7 +112,7 @@ function EvaluationsTable(options={}){
 
 
 window.onload = function(){
-    const appEl = document.querySelector('#app');
-    appEl.innerHTML = EvaluationsPage();
+    const app = document.querySelector('#app');
+    app.innerHTML = EvaluationsPage();
 }
 
