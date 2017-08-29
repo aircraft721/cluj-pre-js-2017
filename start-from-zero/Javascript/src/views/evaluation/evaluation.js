@@ -18,7 +18,6 @@ function EvaluationsPage(options){
         },
     ];
 
-    const newOptions = options || {};
     return `
     ${NAV()}
     ${EvaluationsTable({

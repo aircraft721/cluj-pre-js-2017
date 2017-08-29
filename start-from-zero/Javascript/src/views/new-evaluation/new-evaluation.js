@@ -1,5 +1,4 @@
 function NewEvaluationPage(options) {
-    const newOptions = options || {};
     return `
     ${NAV()}
     <section class="form-candidate">
