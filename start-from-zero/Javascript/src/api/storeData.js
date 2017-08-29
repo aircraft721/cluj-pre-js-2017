@@ -1,13 +1,14 @@
 function FormData(){
     btn.addEventListener('click',function(){
-        function User(username,password,date,checkbox,textarea,legend){
+        function User(username,password,date,radio,textarea,select){
         this.username = username;
         this.password = password;
         this.date = date;
-        this.checkbox = checkbox
+        this.radio = radio;
         this.textarea = textarea;
-        this.legend = legend;
-        //this.select = select;
+        this.select = select.forEach(element=>{
+            this[element.name] = element.value;
+        })
         }
     
         const username = document.getElementById('username-id').value;
@@ -16,7 +17,7 @@ function FormData(){
         const checkbox = document.querySelectorAll('.input-checkbox');
         const textarea = document.querySelectorAll('textarea');
         const legend = document.querySelectorAll('legend');
-        //const select = document.querySelectorAll('select');
+        const select = document.querySelectorAll('select');
         
     
         const textareaArr = [];
@@ -24,34 +25,19 @@ function FormData(){
             textareaArr.push(element.value);
         })
     
-        const nodelist1 = [...document.querySelectorAll('select')];
-        nodelist1.map(n => {
-            
-        })
-        console.log(nodelist1);
-        
-
-        // const selectArr = [];
-        // select.forEach(element => {
-        //     selectArr.push(element.value);
-        // })
     
-        const checkboxArr = [];
+        const radioArr = [];
         checkbox.forEach(element => {
             if(element.checked === true){
-                checkboxArr.push(element.value)
+                radioArr.push(element.value)
             }else{
-                checkboxArr.push();
+                radioArr.push();
             }
         })
-        const checkString = checkboxArr.toString();
+        
+        const radioString = radioArr.toString();
     
-        const legendArr = [];
-        legend.forEach(element => {
-            legendArr.push(element.innerHTML);
-        })
-    
-        const userObj = new User(username,password,calendar,checkString,textareaArr,legendArr);
+        const userObj = new User(username,password,calendar,radioString,textareaArr,select);
         
         localStorage.setItem('userObj',JSON.stringify(userObj));
         const retrieveObject = localStorage.getItem('userObj');

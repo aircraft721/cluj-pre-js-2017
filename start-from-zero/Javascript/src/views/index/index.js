@@ -5,7 +5,6 @@ function redirectToEvaluation(){
         e.stopPropagation();
         e.preventDefault();
         app.innerHTML = EvaluationsPage();
-        
         redirectToNewEvaluation();
     });
 }
@@ -16,13 +15,9 @@ function redirectToNewEvaluation(){
     newEvaluations.addEventListener('click',function(e){
         e.stopPropagation();
         e.preventDefault();
-        app.innerHTML = NewEvaluationPageAll();
-        
+        app.innerHTML = NewEvaluationPageAll();   
         redirectToEvaluation();
-
         const btn = document.getElementById('btn');
-        
-
         FormData();
     });
 }
@@ -39,7 +34,6 @@ function redirectToLogin(){
 function redirectLoginToEvaluation(){
     const loginButton = document.querySelector('.button-login-form');
     loginButton.addEventListener('click',function(e){
-        e.stopPropagation();
         e.preventDefault();
         redirectToNewEvaluation();
         redirectToLogin();
