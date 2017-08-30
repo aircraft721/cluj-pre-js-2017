@@ -32,16 +32,16 @@ function redirectToLogin(){
 }
 
 function redirectLoginToEvaluation(){
-    const loginButton = document.querySelector('.button-login-form');
+    const loginButton = document.getElementById('login-btn');
+    LoginData();
     loginButton.addEventListener('click',function(e){
         e.preventDefault();
         redirectToNewEvaluation();
-        redirectToLogin();
     });
 }
 
-window.addEventListener('load' ,function () {
-    const app = document.querySelector('#app'); 
-    app.innerHTML = Login();
-    redirectLoginToEvaluation();   
-});
+
+const app = document.querySelector('#app'); 
+app.innerHTML = Login();
+
+redirectLoginToEvaluation();   

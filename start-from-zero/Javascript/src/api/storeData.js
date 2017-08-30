@@ -10,7 +10,7 @@ function FormData(){
             this[element.name] = element.value;
         })
         }
-    
+
         const username = document.getElementById('username-id').value;
         const password = document.getElementById('password-id').value;
         const calendar = document.getElementById('calendar-id').value;
@@ -19,7 +19,6 @@ function FormData(){
         const legend = document.querySelectorAll('legend');
         const select = document.querySelectorAll('select');
         
-    
         const textareaArr = [];
         textarea.forEach(element => {
             textareaArr.push(element.value);
@@ -34,6 +33,7 @@ function FormData(){
                 radioArr.push();
             }
         })
+
         
         const radioString = radioArr.toString();
     
