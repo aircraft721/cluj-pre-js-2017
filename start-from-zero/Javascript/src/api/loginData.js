@@ -10,13 +10,10 @@ function LoginData(){
         const passwordCredential = document.getElementById('password-login').value;
         const newUser = new Users(userCredential,passwordCredential);
 
-        
-
         localStorage.setItem('newUser',JSON.stringify(newUser));
 
         const parsedCredentials = JSON.parse(localStorage.getItem('newUser'));
 
-        
         console.log(parsedCredentials);
     })
 }
