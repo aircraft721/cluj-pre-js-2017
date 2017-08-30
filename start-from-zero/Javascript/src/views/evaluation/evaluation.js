@@ -1,6 +1,5 @@
 function EvaluationsPage(options){
     const headings = ['Name','Language','Level',''];
-    
     const rows = [
         {
             name:'Dan Constantinescu',
@@ -27,8 +26,6 @@ function EvaluationsPage(options){
         itemHeadings: headings
     })}
     ${FooterFixed()}
-
-
     `;
 }
 
@@ -37,11 +34,8 @@ function EvaluationTableHeader(options){
     options.headings.map((el)=>{
         const generatedEl = `<th class='table-head-element'>${el}</th>`;
         headings.push(generatedEl);
-        
     });
-
     const headingsEl = `${headings.join('')}`;
-
     return `
     <thead>
         <tr class="table-head-row">
@@ -51,16 +45,12 @@ function EvaluationTableHeader(options){
     `;
 }
 
-
-
-
 function EvaluationTableRow(options={}){
-
     return `
     <tr class='table-body-tr'>
         <td>${options.name}</td>
         <td>${options.language}</td>
-        <td>${options.level} 2</td>
+        <td>${options.level}</td>
         <td class='detalii'>Detalii 
             <a href="#" class="button-toggle plus-button">
                 <span class="minus-toggle"></span>
@@ -70,16 +60,11 @@ function EvaluationTableRow(options={}){
     `;
 }
 
-
-    
 function EvaluationTableBody(options={}){
-    
     const rowsElements = options.items.map(function(rowObj){
         return EvaluationTableRow(rowObj);
     })
-
     const rowsEl = rowsElements.join('');
-
     return `
     <tbody class='table-body'>
         ${rowsEl}
@@ -88,7 +73,6 @@ function EvaluationTableBody(options={}){
 }
 
 function EvaluationsTable(options={}){
-    
     return `
     <section class="table-section">
         <div class="container full-width">
@@ -111,8 +95,4 @@ function EvaluationsTable(options={}){
 
 
 
-window.onload = function(){
-    const app = document.querySelector('#app');
-    app.innerHTML = EvaluationsPage();
-}
 
