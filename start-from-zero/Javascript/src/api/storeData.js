@@ -38,10 +38,17 @@ function FormData(){
         const radioString = radioArr.toString();
     
         const userObj = new User(username,password,calendar,radioString,textareaArr,select);
+        const userObj2 = new User(username,password,calendar,radioString,textareaArr,select);
         
-        localStorage.setItem('userObj',JSON.stringify(userObj));
-        const retrieveObject = localStorage.getItem('userObj');
+        // localStorage.setItem('userObj',JSON.stringify(userObj));
+        // const retrieveObject = localStorage.getItem('userObj');
         
-        console.log(JSON.parse(retrieveObject));
+        // let parsedObject = JSON.parse(retrieveObject);
+        // console.log(parsedObject);
+
+        let evaluations = [];
+        evaluations.push(userObj);
+        localStorage.setItem("evaluations", JSON.stringify(evaluations));
+        
         })
 }
