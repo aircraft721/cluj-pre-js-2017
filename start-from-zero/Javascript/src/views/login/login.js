@@ -3,12 +3,12 @@ const LoginForm = function () {
     <div class="col-md-3 form-column">
         <div class="blue-line">Interview Feedback</div>
         <form action="" id='login-form' class="user-input">
-            <div class="field">
-                <input class='input-zero' id='username-login' type="text" name='username' placeholder="Username">
-            </div>
-            <div class="field">
-                <input class='input-zero' id='password-login' type="password" name='password' placeholder="Password">
-            </div>
+            
+            <input class='input-zero field' id='username-login' type="text" name='username' placeholder="Username">
+          
+            
+            <input class='input-zero field' id='password-login' type="password" name='password' placeholder="Password">
+            
             <a href="#"></a>
             <input type="submit" class='button-login-form' id='login-btn' value='Login'>
         </form>
@@ -82,7 +82,7 @@ const SubmitFeedbackResults = function () {
 
 
 function Login() {
-    return `
+    this.render = `
         ${LoginHeader()}
         ${SubmitFeedbackSection()}
         ${SubmitFeedbackResults()}

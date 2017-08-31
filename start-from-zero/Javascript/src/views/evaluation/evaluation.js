@@ -1,27 +1,28 @@
 function EvaluationsPage(options){
     const headings = ['Name','Language','Level',''];
     const rows = [
-        {
-            username:'Dan Constantinescu',
-            language: 'Javascript',
-            radio:'Junior'
-        },
-        {
-            username:'Adolf Hgg',
-            language: 'SwS',
-            radio:'Master'
-        },
-        {
-            username:'Fiodor D',
-            language: 'Russian',
-            radio:'Master'
-        },
-        JSON.parse(localStorage.getItem('userObj'))
+        // {
+        //     username:'Dan Constantinescu',
+        //     language: 'Javascript',
+        //     radio:'Junior'
+        // },
+        // {
+        //     username:'Adolf Hgg',
+        //     language: 'SwS',
+        //     radio:'Master'
+        // },
+        // {
+        //     username:'Fiodor D',
+        //     language: 'Russian',
+        //     radio:'Master'
+        // },
+        JSON.parse(localStorage.getItem('userObj')),
+        JSON.parse(localStorage.getItem('userObj2')),
     ];
     //JSON.parse(localStorage.getItem('evaluations'));
     
 
-    return `
+    this.render = `
     ${NAV()}
     ${EvaluationsTable({
         items: rows,

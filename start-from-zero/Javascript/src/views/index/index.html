@@ -8,23 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src='../common/common.js'></script>
-    <script src='../../data/data.js'></script>
-    <script src='../evaluation/evaluation.js'></script>
-    <script src='../../api/storeData.js'></script>
-    <script src='../new-evaluation/new-evaluation.js'></script>
-    <script src='../login/login.js'></script>
-    <script src='../../api/loginData.js'></script>
-    
-    
-    
-    
 </head>
 <body>
     <div id="app">
         
     </div>
-    <script src='index.js'></script>
+    <!-- data  -->
+    <script type="text/javascript" src='../common/common.js'></script>
+    <script type="text/javascript" src='../../data/data.js'></script>
+    <script type="text/javascript" src='../../data/storeData.js'></script>
+    <script type="text/javascript" src='../../data/loginData.js'></script>
+    <script type="text/javascript" src='../../utils/ApplicationManager.js'></script>
+
+    <!-- views -->
+    <script type="text/javascript" src='../login/login.js'></script>
+    <script type="text/javascript" src='../evaluation/evaluation.js'></script>
+    <script type="text/javascript" src='../new-evaluation/new-evaluation.js'></script>
+
+    <!-- utils -->
+    <script type="text/javascript" src='../../utils/LocalStorageWrapper.js'></script>
+    
+    <!-- controllers -->
+    <script type="text/javascript" src='../../events/LoginEvents.js'></script>
+    <script type="text/javascript" src='../../events/EvaluationPageEvents.js'></script>
+    <script type="text/javascript" src='../../events/NewEvaluationPageEvents.js'></script>
+
+    <!-- entry point -->
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

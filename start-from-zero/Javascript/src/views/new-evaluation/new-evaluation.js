@@ -1,5 +1,5 @@
 function NewEvaluationPage(options) {
-    return `
+    this.render = `
     ${NAV()}
     <section class="form-candidate">
         <div class="container">
@@ -143,8 +143,6 @@ const SelectOption = function (options = {}) {
     `;
 };
 
-const NewEvaluationPageAll = function () {
-    return NewEvaluationPage();
-};
+
 
 
