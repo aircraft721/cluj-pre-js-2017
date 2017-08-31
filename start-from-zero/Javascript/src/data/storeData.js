@@ -4,7 +4,9 @@ function FormData(){
         this.username = username;
         this.date = date;
         this.radio = radio;
-        this.textarea = textarea;
+        this.textarea = textarea.forEach(element=>{
+            this[element.name] = element.value;
+        });
         this.select = select.forEach(element=>{
             this[element.name] = element.value;
         })
@@ -16,11 +18,6 @@ function FormData(){
         const textarea = document.querySelectorAll('textarea');
         const legend = document.querySelectorAll('legend');
         const select = document.querySelectorAll('select');
-        
-        const textareaArr = [];
-        textarea.forEach(element => {
-            textareaArr.push(element.value);
-        })
     
         const radioArr = [];
         checkbox.forEach(element => {
@@ -33,7 +30,7 @@ function FormData(){
 
         const radioString = radioArr.toString();
     
-        const userObj = new User(username,calendar,radioString,textareaArr,select);
+        const userObj = new User(username,calendar,radioString,textarea,select);
         //const userObj2 = new User(username,calendar,radioString,textareaArr,select);
         
         localStorage.setItem('userObj',JSON.stringify(userObj));

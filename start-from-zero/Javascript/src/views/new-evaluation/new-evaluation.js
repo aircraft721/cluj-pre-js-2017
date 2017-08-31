@@ -75,7 +75,7 @@ const TextareaElements = function (options = {}) {
         textareaArr.push(`
             <div class="textarea-wrap">
             <h4 class='textarea-header'>${d.label}</h4>
-            <textarea class='textarea' name="" id="${d.id}" rows="10" placeholder="${d.placeholder}"></textarea>
+            <textarea class='textarea' name="${d.id}" id="${d.id}" rows="10" placeholder="${d.placeholder}"></textarea>
             <div>
         `);
     });

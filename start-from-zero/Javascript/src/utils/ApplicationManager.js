@@ -19,9 +19,5 @@ const Setup = function(){
                 setupEvents: new EvaluationPageEvents()
         }
         
-        
-        
-
-        
     }
 }   
