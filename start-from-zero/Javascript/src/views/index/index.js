@@ -8,17 +8,11 @@
         return !!window.dataStorage.get('userData');
     }
 
-    const evaluation = function(){
-        return EvaluationsPage();
-    }
-
-    const newEvaluation = function(){
-        return NewEvaluationPage();
-    }
-
-    const build = function(){
+    const build = function(newEvaluationCheck, evaluationCheck){
         const component = Manager.app({
             isLogged : isLogged(),
+            isNewEvaluationPage: newEvaluationCheck,
+            newEvaluationCheck: evaluationCheck,
         });
 
         app.innerHTML = component.view.render;

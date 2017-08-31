@@ -7,12 +7,19 @@ const Setup = function(){
             }
         }
 
-        if(options.isLogged === true){
+        if(options.isNewEvaluationPage === true){
+            return {
+                view: new NewEvaluationPage(),
+                setupEvents: new NewEvaluationPageEvents()
+            }
+        }
+        
             return {
                 view: new EvaluationsPage(),
                 setupEvents: new EvaluationPageEvents()
-            }
         }
+        
+        
         
 
         

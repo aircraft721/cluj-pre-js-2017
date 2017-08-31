@@ -1,13 +1,18 @@
 const NewEvaluationPageEvents = function() {
     this.initEvents = function(build) {
-        const newEvaluations = document.querySelector('.new-evaluations-page');
-        
-        const button = document.querySelector('.link-logout');
-        button.addEventListener('click', function(e) {
+        FormData();
+        const logoutBtn = document.querySelector('.link-logout');
+        logoutBtn.addEventListener('click', function(e) {
             e.preventDefault();
             
             window.dataStorage.remove('userData');
-            build();
+            build(newEvaluationCheck = false, evaluationCheck = false);
         });
+
+        const evaluations = document.querySelector('.evaluations-page');
+        evaluations.addEventListener('click',function(e){
+            e.preventDefault();
+            build(newEvaluationCheck = false, evaluationCheck = true)
+        })
     }
 }

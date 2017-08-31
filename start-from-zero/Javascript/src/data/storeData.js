@@ -34,10 +34,10 @@ function FormData(){
         const radioString = radioArr.toString();
     
         const userObj = new User(username,calendar,radioString,textareaArr,select);
-        const userObj2 = new User(username,calendar,radioString,textareaArr,select);
+        //const userObj2 = new User(username,calendar,radioString,textareaArr,select);
         
-        localStorage.setItem('userObj2',JSON.stringify(userObj));
-        const retrieveObject = localStorage.getItem('userObj2');
+        localStorage.setItem('userObj',JSON.stringify(userObj));
+        const retrieveObject = localStorage.getItem('userObj');
         
         let parsedObject = JSON.parse(retrieveObject);     
         })

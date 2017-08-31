@@ -12,7 +12,7 @@ const LoginEvents = function(){
             });
 
             window.dataStorage.set('userData',userData);
-            build();
+            build(false,true);
         })
     }
 }
