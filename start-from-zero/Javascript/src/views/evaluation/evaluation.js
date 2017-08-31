@@ -1,23 +1,25 @@
 function EvaluationsPage(options){
     const headings = ['Name','Language','Level',''];
-    const rows = JSON.parse(localStorage.getItem('evaluations'));
-    // [
-    //     {
-    //         name:'Dan Constantinescu',
-    //         language: 'Javascript',
-    //         level:'Junior'
-    //     },
-    //     {
-    //         name:'Adolf Hgg',
-    //         language: 'SwS',
-    //         level:'Master'
-    //     },
-    //     {
-    //         name:'Fiodor D',
-    //         language: 'Russian',
-    //         level:'Master'
-    //     },
-    // ];
+    const rows = [
+        {
+            username:'Dan Constantinescu',
+            language: 'Javascript',
+            radio:'Junior'
+        },
+        {
+            username:'Adolf Hgg',
+            language: 'SwS',
+            radio:'Master'
+        },
+        {
+            username:'Fiodor D',
+            language: 'Russian',
+            radio:'Master'
+        },
+        JSON.parse(localStorage.getItem('userObj'))
+    ];
+    //JSON.parse(localStorage.getItem('evaluations'));
+    
 
     return `
     ${NAV()}
@@ -49,7 +51,7 @@ function EvaluationTableRow(options={}){
     return `
     <tr class='table-body-tr'>
         <td>${options.username}</td>
-        <td>${options.textarea[0]}</td>
+        <td>${options.regex}</td>
         <td>${options.radio}</td>
         <td class='detalii'>Detalii 
             <a href="#" class="button-toggle plus-button">
