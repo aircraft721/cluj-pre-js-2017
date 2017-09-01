@@ -1,3 +1,4 @@
+
 .button-login-form
     display: block
     margin: 0 auto
@@ -14,17 +15,9 @@
     display: inline-block
     width: 20px
     height: 20px
-    margin-right: 20px
-    
+    cursor: pointer
 
-/*.plus-button 
-    display: inline-block
-    margin: 20px
-    width: 50px
-    height: 50px
-    border: 1px dotted black */
-
-.minus-toggle 
+.plus-button
     display: block
     width: 20px
     height: 4px
@@ -33,7 +26,7 @@
     transform: translateY(-50%)
     transform-origin: center center
 
-.minus-toggle::after 
+.plus-button::after 
     content: ""
     display: block
     width: 20px
@@ -41,15 +34,6 @@
     position: absolute;
     transform-origin: center center
     transform: rotate(90deg)
-
-.close-2.minus-toggle::after 
-  transform: rotate(0deg)
-  background: transparent
-
-.close-2.minus-toggle 
-  transform: rotate(180deg)
-  top: 45
-
 
 .button-wrap
     display: flex

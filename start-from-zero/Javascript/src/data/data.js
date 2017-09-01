@@ -90,31 +90,31 @@ function FieldsetData(){
                     },
                     {
                         span: 'Exception handling',
-                        name: 'exception-handling',
+                        name: 'exceptionHandling',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Version Control',
-                        name: 'version-control',
+                        name: 'versionControl',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Access modifiers',
-                        name: 'access-modifiers',
+                        name: 'accessModifiers',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Design Pattern',
-                        name: 'design-patterns',
+                        name: 'designPatterns',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Issue Tracking',
-                        name: 'issue-tracking',
+                        name: 'issueTracking',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -143,7 +143,7 @@ function FieldsetData(){
                     },
                     {
                         span: 'Response codes',
-                        name: 'response-codes',
+                        name: 'responseCodes',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -161,7 +161,7 @@ function FieldsetData(){
                     },
                     {
                         span: 'Request methods',
-                        name: 'request-methods',
+                        name: 'requestMethods',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -184,13 +184,13 @@ function FieldsetData(){
                     },
                     {
                         span: 'Basic SEO',
-                        name: 'basic-seo',
+                        name: 'basicSeo',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Syntax rules',
-                        name: 'syntax-rules',
+                        name: 'syntaxRules',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -213,13 +213,13 @@ function FieldsetData(){
                     },
                     {
                         span: 'Box Modeling',
-                        name: 'box-modeling',
+                        name: 'boxModeling',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'CSS 3.0',
-                        name: 'css-3',
+                        name: 'css3',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -243,7 +243,7 @@ function FieldsetData(){
                     },
                     {
                         span: 'Dynamic stylesheet',
-                        name: 'dynamic-stylesheet',
+                        name: 'dynamicStylesheet',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -254,19 +254,19 @@ function FieldsetData(){
                 items: [
                     {
                         span: 'Data types and variables',
-                        name: 'data-types',
+                        name: 'dataTypes',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Object manipulation',
-                        name: 'object-manipulation',
+                        name: 'objectManipulation',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'DOM Manipulation',
-                        name: 'dom-manipulation',
+                        name: 'domManipulation',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -284,7 +284,7 @@ function FieldsetData(){
                     },
                     {
                         span: 'Event Handling',
-                        name: 'evemt-handling',
+                        name: 'eventHandling',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -338,7 +338,7 @@ function FieldsetData(){
                     },
                     {
                         span: 'Browser Engines',
-                        name: 'browser-engines',
+                        name: 'browserEngines',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -355,7 +355,7 @@ function FieldsetData(){
                 items: [
                     {
                         span: 'Backend frameworks',
-                        name: 'backend-frameworks',
+                        name: 'backendFrameworks',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
@@ -367,13 +367,13 @@ function FieldsetData(){
                     },
                     {
                         span: 'DOM Manipulation',
-                        name: 'dom-manipulation',
+                        name: 'domManipulation',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Unit Testing',
-                        name: 'unit-testing',
+                        name: 'unitTesting',
                         optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },

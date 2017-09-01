@@ -36,6 +36,7 @@ function FormData(){
         localStorage.setItem('userObj',JSON.stringify(userObj));
         const retrieveObject = localStorage.getItem('userObj');
         
-        let parsedObject = JSON.parse(retrieveObject);     
+        let parsedObject = JSON.parse(retrieveObject);    
+        console.log(parsedObject);
         })
 }
