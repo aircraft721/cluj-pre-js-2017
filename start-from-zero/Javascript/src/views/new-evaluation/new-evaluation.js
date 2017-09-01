@@ -1,24 +1,23 @@
 function NewEvaluationPage(options) {
-    const newOptions = options || {};
     return `
     ${NAV()}
     <section class="form-candidate">
-    <div class="container">
-       <div class="row">
-            <div class="col-md-12">
-                <form action="" class="user-input" id='form-new' method='post'>
-    ${Inputs(
-        InputData()
-    )}
-    ${TechnicalLevelPicker(
-        TechnicalData()
-    )}
-    ${TextArea(
-        TextareaData()
-    )}
-    ${SelectOption(
-        FieldsetData()
-    )}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="" class="user-input" id='form-new' method='post'>
+                        ${Inputs(
+                            InputData()
+                        )}
+                        ${TechnicalLevelPicker(
+                            TechnicalData()
+                        )}
+                        ${TextArea(
+                            TextareaData()
+                        )}
+                        ${SelectOption(
+                            FieldsetData()
+                        )}
                         <div class="button-wrap">
                             <input type="button" id='btn' class='submit-button' value='Submit'>
                         </div>
@@ -102,7 +101,7 @@ const Select = function (options = {}) {
     <div class="column-30 margin-right">
     <span class='description'>${options.span}</span>
     <select name="${options.name}" class="select">
-        ${options.dropdown.map((g, i) => Option(g,i)).join('')}
+        ${options.optionValue.map((g) => Option(g)).join('')}
     </select>
     </div>
     

@@ -86,7 +86,7 @@ function FieldsetData(){
                         span: 'Classes',
                         name: 'classes',
                         optionValue: ['0', '1', '2', '3'],
-                        dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
+                        dropdown: ['xbox', 'Java', 'Python', 'Haskell'],
                     },
                     {
                         span: 'Exception handling',
@@ -197,7 +197,7 @@ function FieldsetData(){
                     {
                         span: 'Attributes',
                         name: 'attributes',
-                        voptionValue: ['0', '1', '2', '3'],
+                        optionValue: ['0', '1', '2', '3'],
                         dropdown: ['Javascript', 'Java', 'Python', 'Haskell'],
                     },
                 ],
