@@ -13,35 +13,6 @@ function LoginData(){
         localStorage.setItem('newUser',JSON.stringify(newUser));
 
         const parsedCredentials = JSON.parse(localStorage.getItem('newUser'));
-
-        console.log(parsedCredentials);
     })
 }
 
-// var Module = (function(){
-//     function auth(){
-//         var storage = localStorage;
-
-//         var service = {
-//             setItem: setItem,
-//             getItem: getItem,
-//             removeItem: removeItem,
-//        
-//         };
-//         return service;
-
-//         function setItem(key, token) {
-//             storage.setItem(key, token);
-//         }
-
-//         function removeItem(key) {
-//             storage.removeItem(key);
-//         }
-
-//         function getItem(key) {
-//             cachedToken = storage.getItem(key);
-//             return cachedToken;
-//         }
-
-//     }
-// })();

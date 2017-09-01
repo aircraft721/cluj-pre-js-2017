@@ -1,47 +1,25 @@
+(function(){
+    window.dataStorage = new LocalStorageWrapper();
 
-function redirectToEvaluation(){
-    const evaluations= document.querySelector('.evaluations-page');
-    evaluations.addEventListener('click',function(e){
-        e.stopPropagation();
-        e.preventDefault();
-        app.innerHTML = EvaluationsPage();
-        redirectToNewEvaluation();
-    });
-}
+    const app = document.getElementById('app');
 
-function redirectToNewEvaluation(){
-    app.innerHTML = EvaluationsPage();
-    const newEvaluations = document.querySelector('.new-evaluations-page');
-    newEvaluations.addEventListener('click',function(e){
-        e.stopPropagation();
-        e.preventDefault();
-        app.innerHTML = NewEvaluationPageAll();   
-        redirectToEvaluation();
-        const btn = document.getElementById('btn');
-        FormData();
-    });
-}
+    const Manager = new Setup();
+    const isLogged = function(){
+        return !!window.dataStorage.get('userData');
+    }
 
-function redirectToLogin(){
-    const logoutButton = document.querySelector('.link-logout');
-    logoutButton.addEventListener('click',function(e){
-        e.stopPropagation();
-        e.preventDefault();
-        app.innerHTML = Login();
-    });
-}
+    const build = function(newEvaluationCheck, evaluationCheck){
+        const component = Manager.app({
+            isLogged : isLogged(),
+            isNewEvaluationPage: newEvaluationCheck,
+            newEvaluationCheck: evaluationCheck,
+        });
 
-function redirectLoginToEvaluation(){
-    const loginButton = document.getElementById('login-btn');
-    LoginData();
-    loginButton.addEventListener('click',function(e){
-        e.preventDefault();
-        redirectToNewEvaluation();
-    });
-}
+        app.innerHTML = component.view.render;
+        if(component.setupEvents !== undefined){
+            component.setupEvents.initEvents(build);
+        }
+    }
+    build();
 
-
-const app = document.querySelector('#app'); 
-app.innerHTML = Login();
-
-redirectLoginToEvaluation();   
+})();
