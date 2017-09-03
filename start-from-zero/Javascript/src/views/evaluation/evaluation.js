@@ -2,8 +2,6 @@ function EvaluationsPage(options){
     const headings = ['Name','Language','Level','Detalii'];
     const rows = JSON.parse(localStorage.getItem('localArr'));
 
-    
-
     this.render = `
     ${NAV()}
     ${EvaluationsTable({
