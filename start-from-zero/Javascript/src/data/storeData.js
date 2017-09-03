@@ -22,19 +22,24 @@ function FormData(){
         const radioArr = [];
         checkbox.forEach(element => {
             if(element.checked === true){
-                radioArr.push(element.value)
-            }else{
-                radioArr.push();
+                radioArr.push(element.value);
             }
         })
 
         const radioString = radioArr.toString();
     
         const userObj = new User(username,calendar,radioString,textarea,select);
-        //const userObj2 = new User(username,calendar,radioString,textareaArr,select);
         
-        localStorage.setItem('userObj',JSON.stringify(userObj));
-        const retrieveObject = localStorage.getItem('userObj');
+        const localStorageLength = localStorage.length;
+        let localArr = [];
+        if(localStorageLength !== 0){
+            localArr = JSON.parse(localStorage.getItem("localArr"));
+        }
+        localArr.push(userObj);
+
+
+        localStorage.setItem('localArr',JSON.stringify(localArr));
+        const retrieveObject = localStorage.getItem('localArr');
         
         let parsedObject = JSON.parse(retrieveObject);    
         console.log(parsedObject);

@@ -1,24 +1,6 @@
 function EvaluationsPage(options){
     const headings = ['Name','Language','Level','Detalii'];
-    const rows = [
-        // {
-        //     username:'Dan Constantinescu',
-        //     language: 'Javascript',
-        //     radio:'Junior'
-        // },
-        // {
-        //     username:'Adolf Hgg',
-        //     language: 'SwS',
-        //     radio:'Master'
-        // },
-        // {
-        //     username:'Fiodor D',
-        //     language: 'Russian',
-        //     radio:'Master'
-        // },
-        JSON.parse(localStorage.getItem('userObj')),
-        //JSON.parse(localStorage.getItem('userObj2')),
-    ];
+    const rows = JSON.parse(localStorage.getItem('localArr'));
 
     
 
@@ -77,6 +59,10 @@ function EvaluationTableBody(options={}){
 }
 
 function DetailsEvaluation(options={}){
+    // var d = Object.keys(options);
+    // // var x = Object.values(options);
+    // // console.log(x);
+    // console.log(d);
     return `
         <div class='textarea-details-wrapper'>
             <div class='details-list details-textarea'><p>${options.textarea1}</p></div>
@@ -107,6 +93,15 @@ function DetailsEvaluation(options={}){
             <div class='details-list details-html'>${options.syntaxRules}</div>
             <div class='details-list details-html'>${options.attributes}</div>
         </div>
+        <div class='css-wrapper'>
+            <div class='details-list details-css'>${options.usage}</div>
+            <div class='details-list details-css'>${options.boxModeling}</div>
+            <div class='details-list details-css'>${options.css3}</div>
+            <div class='details-list details-css'>${options.classes}</div>
+            <div class='details-list details-css'>${options.selectors}</div>
+            <div class='details-list details-css'>${options.styling}</div>
+            <div class='details-list details-css'>${options.dynamicStylesheet}</div>
+        </div>
     `;
 }
 
@@ -114,10 +109,14 @@ function Details(options={}){
     const detailsElements = options.items.map(el =>{
         return DetailsEvaluation(el);
     })
-    const detailsEl = detailsElements.join('');
+    
+
+    //const detailsEl = detailsElements.join('');
+    console.log(detailsElements);
+
     return `
         <div id='accordion' class="hidethis">
-            ${detailsEl}
+            ${detailsElements}
         <div>
     `
 }

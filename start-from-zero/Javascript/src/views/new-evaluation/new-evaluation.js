@@ -27,7 +27,9 @@ function NewEvaluationPage(options) {
             </div>
         </div>
     </section>
+    ${Footer()}
     `
+    
     ;
 }
 

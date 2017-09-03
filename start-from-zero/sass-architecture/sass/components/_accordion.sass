@@ -42,7 +42,7 @@
 .textarea-details-wrapper
     margin-top: 25px
 
-.oop-wrapper, .http-wrapper, .html-wrapper
+.oop-wrapper, .http-wrapper, .html-wrapper, .css-wrapper
     display: flex
     justify-content: space-between
     flex-wrap: wrap
@@ -94,8 +94,8 @@
         text-transform: uppercase
         vertical-align: top
 
+
 .details-html
-    .details-http
     display: inline-block
     width: 22%
     margin-bottom: 25px
@@ -109,6 +109,30 @@
         bottom: 100%
         color: $white
         content: 'html'
+        display: inline-block
+        font-size: 8px
+        left: -1px
+        letter-spacing: 1px
+        padding: 3px 5px
+        position: absolute
+        text-transform: uppercase
+        vertical-align: top
+
+
+.details-css
+    display: inline-block
+    width: 22%
+    margin-bottom: 25px
+    border: 1px solid $main-color
+    position: relative
+    padding: 10px 0
+    text-align: center
+    &:before
+        background: darken($main-color, 21%)
+        border-radius: 3px 3px 0 0
+        bottom: 100%
+        color: $white
+        content: 'css'
         display: inline-block
         font-size: 8px
         left: -1px
