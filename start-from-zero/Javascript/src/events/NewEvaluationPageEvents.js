@@ -1,6 +1,6 @@
 const NewEvaluationPageEvents = function() {
     this.initEvents = function(build) {
-        FormData();
+        FormData(); //the function that creates the object
         const logoutBtn = document.querySelector('.link-logout');
         logoutBtn.addEventListener('click', function(e) {
             e.preventDefault();
