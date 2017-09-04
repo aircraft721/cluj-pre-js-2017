@@ -1,4 +1,4 @@
-function InputData(){
+windowObjectWrap.InputData = function(){
     const inputPlaceholder = {
         
         media: [
@@ -31,7 +31,7 @@ function InputData(){
     return inputPlaceholder;
 }
 
-function TechnicalData(){
+windowObjectWrap.TechnicalData = function(){
     const technicalData = {
         title: 'Technical Level',
         headers: ['Trainee', 'Junior', 'Middle', 'Senior'],
@@ -53,7 +53,7 @@ function TechnicalData(){
     return technicalData;
 }
     
-function TextareaData(){
+windowObjectWrap.TextareaData = function(){
     const textarea = { 
         text: [
             {
@@ -76,7 +76,7 @@ function TextareaData(){
     return textarea;
 }    
         
-function FieldsetData(){
+windowObjectWrap.FieldsetData = function(){
     const fieldset = {
         data: [
             {

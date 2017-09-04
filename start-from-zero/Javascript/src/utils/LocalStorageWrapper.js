@@ -1,4 +1,4 @@
-const LocalStorageWrapper = function(){
+windowObjectWrap.LocalStorageWrapper = function(){
     this.set = function(key,val){
        localStorage.setItem(key,JSON.stringify(val)); 
     }

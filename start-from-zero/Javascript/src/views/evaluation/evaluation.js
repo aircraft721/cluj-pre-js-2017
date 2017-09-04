@@ -1,19 +1,19 @@
-function EvaluationsPage(options){
+windowObjectWrap.EvaluationsPage = function(options){
     const headings = ['Name','Language','Level','Detalii'];
     const rows = JSON.parse(localStorage.getItem('localArr'));
     
 
     this.render = `
-    ${NAV()}
-    ${EvaluationsTable({
+    ${windowObjectWrap.NAV()}
+    ${windowObjectWrap.EvaluationsTable({
         items: rows,
         itemHeadings: headings
     })}
-    ${FooterFixed()}
+    ${windowObjectWrap.FooterFixed()}
     `;
 }
 
-function EvaluationTableHeader(options){
+windowObjectWrap.EvaluationTableHeader = function(options){
     const headings = [];
     options.headings.map((el)=>{
         const generatedEl = `<th class='table-head-element'>${el}</th>`;
@@ -29,7 +29,7 @@ function EvaluationTableHeader(options){
     `;
 }
 
-function EvaluationTableRow(options={}){
+windowObjectWrap.EvaluationTableRow = function(options={}){
     return `
     <tr class='table-body-tr'>
         <td>${options.username}</td>
@@ -45,9 +45,9 @@ function EvaluationTableRow(options={}){
     `;
 }
 
-function EvaluationTableBody(options={}){
+windowObjectWrap.EvaluationTableBody = function(options={}){
     const rowsElements = options.items.map(function(rowObj){
-        return EvaluationTableRow(rowObj);
+        return windowObjectWrap.EvaluationTableRow(rowObj);
     })
     const rowsEl = rowsElements.join('');
     return `
@@ -57,7 +57,7 @@ function EvaluationTableBody(options={}){
     `;
 }
 
-function DetailsEvaluation(options={}){
+windowObjectWrap.DetailsEvaluation = function(options={}){
     
     return `
         <div class='textarea-details-wrapper'>
@@ -93,10 +93,10 @@ function DetailsEvaluation(options={}){
     `;
 }
 
-function Details(options={}){
+windowObjectWrap.Details = function(options={}){
 
     const detailsElements = options.items.map(el =>{
-        return DetailsEvaluation(el);
+        return windowObjectWrap.DetailsEvaluation(el);
     })
     //const detailsEl = detailsElements.join('');
     
@@ -114,22 +114,22 @@ function Details(options={}){
     `
 }
 
-function EvaluationsTable(options={}){
+windowObjectWrap.EvaluationsTable = function(options={}){
     return `
     <section class="table-section">
         <div class="container full-width">
             <div class="row">
                 <div class="col-md-12">
                     <table class='table-evaluation'>
-                        ${EvaluationTableHeader({
+                        ${windowObjectWrap.EvaluationTableHeader({
                             headings: options.itemHeadings 
                         })}
-                        ${EvaluationTableBody({
+                        ${windowObjectWrap.EvaluationTableBody({
                             items: options.items
                         })}
                     </table>
                     
-                    ${Details({
+                    ${windowObjectWrap.Details({
                         items: options.items
                     })}
                     

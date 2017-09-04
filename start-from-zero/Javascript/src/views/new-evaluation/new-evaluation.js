@@ -1,22 +1,22 @@
-function NewEvaluationPage(options) {
+windowObjectWrap.NewEvaluationPage = function(options) {
     this.render = `
-    ${NAV()}
+    ${windowObjectWrap.NAV()}
     <section class="form-candidate">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <form action="" class="user-input" id='form-new' method='post'>
                         ${Inputs(
-                            InputData()
+                            windowObjectWrap.InputData()
                         )}
                         ${TechnicalLevelPicker(
-                            TechnicalData()
+                            windowObjectWrap.TechnicalData()
                         )}
                         ${TextArea(
-                            TextareaData()
+                            windowObjectWrap.TextareaData()
                         )}
                         ${SelectOption(
-                            FieldsetData()
+                            windowObjectWrap.FieldsetData()
                         )}
                         <div class="button-wrap">
                             <input type="button" id='btn' class='submit-button' value='Submit'>
@@ -27,7 +27,7 @@ function NewEvaluationPage(options) {
             </div>
         </div>
     </section>
-    ${Footer()}
+    ${windowObjectWrap.Footer()}
     `
     
     ;

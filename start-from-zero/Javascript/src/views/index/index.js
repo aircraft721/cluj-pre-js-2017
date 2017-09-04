@@ -1,5 +1,5 @@
 (function(){
-    window.dataStorage = new LocalStorageWrapper();
+    window.dataStorage = new windowObjectWrap.LocalStorageWrapper();
 
     const app = document.getElementById('app');
 

@@ -81,12 +81,12 @@ const SubmitFeedbackResults = function () {
 };
 
 
-function Login() {
+windowObjectWrap.Login = function() {
     this.render = `
         ${LoginHeader()}
         ${SubmitFeedbackSection()}
         ${SubmitFeedbackResults()}
-        ${Footer()}
+        ${windowObjectWrap.Footer()}
     `;
 };
 

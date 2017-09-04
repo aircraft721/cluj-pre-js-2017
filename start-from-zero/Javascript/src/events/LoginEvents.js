@@ -1,4 +1,4 @@
-const LoginEvents = function(){
+windowObjectWrap.LoginEvents = function(){
     this.initEvents = function(build){
         const form = document.getElementById('login-form');
         form.addEventListener('submit',function(e){
