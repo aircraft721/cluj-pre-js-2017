@@ -1,6 +1,13 @@
 windowObjectWrap.EvaluationsPage = function(options){
     const headings = ['Name','Language','Level','Detalii'];
-    const rows = JSON.parse(localStorage.getItem('localArr'));
+    var rows;
+    var localSt = localStorage.length;
+    if(localSt == 1){
+        rows = [];
+    }else{
+        rows = JSON.parse(localStorage.getItem('localArr'));
+    }
+    
     
 
     this.render = `
@@ -124,9 +131,6 @@ windowObjectWrap.EvaluationsTable = function(options={}){
                     ${windowObjectWrap.Details({
                         items: options.items
                     })}
-                    
-
-
                 </div>
             </div>
         </div>
