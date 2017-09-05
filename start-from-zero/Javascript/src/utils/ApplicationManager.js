@@ -1,22 +1,23 @@
+const windowObjectWrap = {};
 const Setup = function(){
     Setup.prototype.app = function(options) {
         if(options.isLogged === false){
             return {
-                view: new Login(),
-                setupEvents: new LoginEvents()
+                view: new windowObjectWrap.Login(),
+                setupEvents: new windowObjectWrap.LoginEvents()
             }
         }
 
         if(options.isNewEvaluationPage === true){
             return {
-                view: new NewEvaluationPage(),
-                setupEvents: new NewEvaluationPageEvents()
+                view: new windowObjectWrap.NewEvaluationPage(),
+                setupEvents: new windowObjectWrap.NewEvaluationPageEvents()
             }
         }
         
             return {
-                view: new EvaluationsPage(),
-                setupEvents: new EvaluationPageEvents()
+                view: new windowObjectWrap.EvaluationsPage(),
+                setupEvents: new windowObjectWrap.EvaluationPageEvents()
         }
         
     }

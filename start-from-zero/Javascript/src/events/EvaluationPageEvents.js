@@ -1,4 +1,4 @@
-const EvaluationPageEvents = function() {
+windowObjectWrap.EvaluationPageEvents = function() {
     this.initEvents = function(build) {
 
         //function for accordion
@@ -11,18 +11,6 @@ const EvaluationPageEvents = function() {
                 accordion.classList.toggle('hidethis');
             });
         }
-
-        //console.log(detailsElements);
-
-        // for(let i = 0; i < toggle.length; i++){
-        //     console.log(toggle[i]);
-        //     for(let o = 0; o < detailsElements.length; o++){
-        //         toggle[i].addEventListener('click',function(e){
-        //             const accordion = document.getElementById('accordion');
-        //             accordion.classList.toggle('hidethis');
-        //         })
-        //     }
-        // }
 
         const logoutBtn = document.querySelector('.link-logout');
         logoutBtn.addEventListener('click', function(e) {

@@ -1,4 +1,4 @@
-function LoginData(){
+windowObjectWrap.LoginData = function(){
     const loginButton = document.getElementById('login-btn');
     loginButton.addEventListener('click',function(e){
         function Users(loginUsername,loginPassword){

@@ -1,4 +1,4 @@
-function FormData(){
+windowObjectWrap.FormData = function(){
     btn.addEventListener('click',function(){
         function User(username,date,radio,textarea,select){
         this.username = username;

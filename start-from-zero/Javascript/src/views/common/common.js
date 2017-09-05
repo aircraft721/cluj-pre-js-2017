@@ -1,4 +1,4 @@
-const FooterFixed = function(){
+windowObjectWrap.FooterFixed = function(){
     return `
     <footer class='fixed-footer'>
         <div class="container">
@@ -8,7 +8,7 @@ const FooterFixed = function(){
     `;
 }
 
-const Footer = function(){
+windowObjectWrap.Footer = function(){
     return `
     <footer>
         <div class="container">
@@ -19,7 +19,7 @@ const Footer = function(){
 }
 
 
-const NAV = function(options={}){
+windowObjectWrap.NAV = function(options={}){
     return `
     <nav class='navbar'>
         <a href="index.html"><img src="assets/126-Softvision-logo.png" alt="" class="image"></a>
