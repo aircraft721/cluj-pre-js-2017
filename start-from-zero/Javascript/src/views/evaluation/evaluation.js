@@ -1,6 +1,16 @@
 windowObjectWrap.EvaluationsPage = function(options){
     const headings = ['Name','Language','Level','Detalii'];
-    const rows = JSON.parse(localStorage.getItem('localArr'));
+
+
+    const localSt = localStorage.length;
+    var rows;
+    if(localSt == 1){
+        rows = [];
+    }else{
+        rows = JSON.parse(localStorage.getItem("localArr"));
+    }
+    
+    
     
 
     this.render = `

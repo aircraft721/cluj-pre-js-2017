@@ -33,7 +33,6 @@ xhr.onload = function(){
             </section>
             ${windowObjectWrap.Footer()}
             `
-            
             ;
         }
         

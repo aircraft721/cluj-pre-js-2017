@@ -31,8 +31,9 @@ windowObjectWrap.FormData = function(){
         const userObj = new User(username,calendar,radioString,textarea,select);
         
         const localStorageLength = localStorage.length;
-        let localArr = [];
-        if(localStorageLength !== 0){
+        console.log(localStorageLength);
+        var localArr = [];
+        if(localStorageLength !== 1){
             localArr = JSON.parse(localStorage.getItem("localArr"));
         }
         localArr.push(userObj);
