@@ -21,13 +21,16 @@ function NewEvaluationPage(options) {
                         <div class="button-wrap">
                             <input type="button" id='btn' class='submit-button' value='Submit'>
                         </div>
+                        
                     </form>
                 </div>
             </div>
         </div>
     </section>
     ${Footer()}
-    `;
+    `
+    
+    ;
 }
 
 

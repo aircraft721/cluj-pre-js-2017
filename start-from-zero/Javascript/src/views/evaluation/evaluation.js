@@ -1,25 +1,6 @@
 function EvaluationsPage(options){
-    const headings = ['Name','Language','Level',''];
-    const rows = [
-        {
-            username:'Dan Constantinescu',
-            language: 'Javascript',
-            radio:'Junior'
-        },
-        {
-            username:'Adolf Hgg',
-            language: 'SwS',
-            radio:'Master'
-        },
-        {
-            username:'Fiodor D',
-            language: 'Russian',
-            radio:'Master'
-        },
-        JSON.parse(localStorage.getItem('userObj')),
-        //JSON.parse(localStorage.getItem('userObj2')),
-    ];
-
+    const headings = ['Name','Language','Level','Detalii'];
+    const rows = JSON.parse(localStorage.getItem('localArr'));
     
 
     this.render = `
@@ -55,10 +36,11 @@ function EvaluationTableRow(options={}){
         <td>${options.regex}</td>
         <td>${options.radio}</td>
         <td class='detalii'>Detalii 
-            <a href="#" class="button-toggle plus-button">
-                <span class="minus-toggle"></span>
-            </a>
+            <div class="button-toggle">
+                <span class="plus-button"></span>
+            </div>
         </td>
+        
     </tr>
     `;
 }
@@ -75,6 +57,63 @@ function EvaluationTableBody(options={}){
     `;
 }
 
+function DetailsEvaluation(options={}){
+    
+    return `
+        <div class='textarea-details-wrapper'>
+            <div class='details-list details-textarea'><p>${options.textarea1}</p></div>
+            <div class='details-list details-textarea'><p>${options.textarea2}</p></div>
+            <div class='details-list details-textarea'><p>${options.textarea3}</p></div>
+        </div>
+        <div class='oop-wrapper'>
+            <div class='details-list details-oop'>${options.classes}</div>
+            <div class='details-list details-oop'>${options.exceptionHandling}</div>
+            <div class='details-list details-oop'>${options.versionControl}</div>
+            <div class='details-list details-oop'>${options.accessModifiers}</div>
+            <div class='details-list details-oop'>${options.designPatterns}</div>
+            <div class='details-list details-oop'>${options.issueTracking}</div>
+            <div class='details-list details-oop'>${options.polymorphism}</div>
+            <div class='details-list details-oop'>${options.regex}</div>
+        </div>
+        <div class='http-wrapper'>
+            <div class='details-list details-http'>${options.protocol}</div>
+            <div class='details-list details-http'>${options.responseCodes}</div>
+            <div class='details-list details-http'>${options.rest}</div>
+            <div class='details-list details-http'>${options.headers}</div>
+            <div class='details-list details-http'>${options.requestMethods}</div>
+        </div>
+        <div class='html-wrapper'>
+            <div class='details-list details-html'>${options.doctype}</div>
+            <div class='details-list details-html'>${options.tags}</div>
+            <div class='details-list details-html'>${options.basicSeo}</div>
+            <div class='details-list details-html'>${options.syntaxRules}</div>
+            <div class='details-list details-html'>${options.attributes}</div>
+        </div>
+        
+    `;
+}
+
+function Details(options={}){
+
+    const detailsElements = options.items.map(el =>{
+        return DetailsEvaluation(el);
+    })
+    //const detailsEl = detailsElements.join('');
+    
+    
+    //console.log(detailsElements);
+    detailsElements.forEach((f,i)=>{
+        console.log(i);
+    })
+    
+
+    return `
+        <div id='accordion' class="hidethis">
+            ${detailsElements}
+        <div>
+    `
+}
+
 function EvaluationsTable(options={}){
     return `
     <section class="table-section">
@@ -89,6 +128,13 @@ function EvaluationsTable(options={}){
                             items: options.items
                         })}
                     </table>
+                    
+                    ${Details({
+                        items: options.items
+                    })}
+                    
+
+
                 </div>
             </div>
         </div>
