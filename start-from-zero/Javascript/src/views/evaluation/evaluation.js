@@ -48,14 +48,14 @@ windowObjectWrap.EvaluationTableRow = function(options={}){
 windowObjectWrap.EvaluationTableBody = function(options={}){
     const rowsElements = options.items.map(function(rowObj){
         return windowObjectWrap.EvaluationTableRow(rowObj);
-    })
+    });
     const rowsEl = rowsElements.join('');
     return `
     <tbody class='table-body'>
         ${rowsEl}
     </tbody>
     `;
-}
+};
 
 windowObjectWrap.DetailsEvaluation = function(options={}){
     
@@ -98,14 +98,6 @@ windowObjectWrap.Details = function(options={}){
     const detailsElements = options.items.map(el =>{
         return windowObjectWrap.DetailsEvaluation(el);
     })
-    //const detailsEl = detailsElements.join('');
-    
-    
-    //console.log(detailsElements);
-    detailsElements.forEach((f,i)=>{
-        console.log(i);
-    })
-    
 
     return `
         <div id='accordion' class="hidethis">

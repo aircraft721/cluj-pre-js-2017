@@ -42,6 +42,6 @@ windowObjectWrap.FormData = function(){
         const retrieveObject = localStorage.getItem('localArr');
         
         let parsedObject = JSON.parse(retrieveObject);    
-        console.log(parsedObject);
+        //console.log(parsedObject);
         })
 }
