@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open('GET','../../data/data.js',true);
+xhr.open('GET','../../data/xhrData.json',true);
 xhr.onload = function(){
     if(this.status == 200){
         windowObjectWrap.NewEvaluationPage = function(options) {
