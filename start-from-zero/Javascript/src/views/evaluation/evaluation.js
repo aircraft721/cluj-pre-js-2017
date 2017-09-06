@@ -9,6 +9,7 @@ windowObjectWrap.EvaluationsPage = function(options){
         rows = JSON.parse(localStorage.getItem("localArr"));
     }
 
+
     this.render = `
     ${windowObjectWrap.NAV()}
     ${windowObjectWrap.EvaluationsTable({
