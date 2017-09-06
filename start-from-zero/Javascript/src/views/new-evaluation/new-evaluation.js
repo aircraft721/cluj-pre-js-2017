@@ -168,7 +168,7 @@ getPromise('GET','../../data/xhrData.json')
     console.log(what);
 })
 .catch(function(err){
-    console.error('Errorhoroor', err.statusText);
+    console.error('Errorhorror', err.statusText);
 });
 
 
