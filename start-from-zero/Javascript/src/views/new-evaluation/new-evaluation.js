@@ -1,7 +1,8 @@
 var xhr = new XMLHttpRequest();
-xhr.open('GET','../../data/data.js',true);
-xhr.onreadystatechange = function(){
+xhr.open('GET','../../data/xhrData.json',true);
+xhr.onload = function(){
     if(this.readyState == 4 && this.status == 200){
+        const jsonObj = JSON.parse(xhr.responseText);
         windowObjectWrap.NewEvaluationPage = function(options) {
             this.render = `
             ${windowObjectWrap.NAV()}
@@ -11,16 +12,16 @@ xhr.onreadystatechange = function(){
                         <div class="col-md-12">
                             <form action="" class="user-input" id='form-new' method='post'>
                                 ${Inputs(
-                                    windowObjectWrap.InputData()
+                                    jsonObj.inputPlaceholder
                                 )}
                                 ${TechnicalLevelPicker(
-                                    windowObjectWrap.TechnicalData()
+                                    jsonObj.technicalData
                                 )}
                                 ${TextArea(
-                                    windowObjectWrap.TextareaData()
+                                    jsonObj.textarea
                                 )}
                                 ${SelectOption(
-                                    windowObjectWrap.FieldsetData()
+                                    jsonObj.fieldset
                                 )}
                                 <div class="button-wrap">
                                     <input type="button" id='btn' class='submit-button' value='Submit'>
