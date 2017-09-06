@@ -1,7 +1,7 @@
 var xhr = new XMLHttpRequest();
 xhr.open('GET','../../data/data.js',true);
-xhr.onload = function(){
-    if(this.status == 200){
+xhr.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
         windowObjectWrap.NewEvaluationPage = function(options) {
             this.render = `
             ${windowObjectWrap.NAV()}
@@ -149,7 +149,7 @@ xhr.onload = function(){
             `;
         };
     }else{
-        console.log('something went wrong');
+        console.error('something went wrong');
     }
 }
 xhr.send();

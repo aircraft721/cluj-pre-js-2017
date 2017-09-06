@@ -31,18 +31,15 @@ windowObjectWrap.FormData = function(){
         const userObj = new User(username,calendar,radioString,textarea,select);
         
         const localStorageLength = localStorage.length;
-        console.log(localStorageLength);
         var localArr = [];
         if(localStorageLength !== 1){
             localArr = JSON.parse(localStorage.getItem("localArr"));
         }
         localArr.push(userObj);
 
-
         localStorage.setItem('localArr',JSON.stringify(localArr));
         const retrieveObject = localStorage.getItem('localArr');
         
         let parsedObject = JSON.parse(retrieveObject);    
-        //console.log(parsedObject);
         })
 }
