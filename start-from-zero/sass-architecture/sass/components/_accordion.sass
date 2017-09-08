@@ -44,17 +44,21 @@
 
 .oop-wrapper, .http-wrapper, .html-wrapper, .css-wrapper
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
     flex-wrap: wrap
 
 .details-oop
     display: inline-block
-    width: 22%
+    width: 15.783%
     margin-bottom: 25px
+    margin-right: 10px
     border: 1px solid $main-color
     position: relative
     padding: 10px 0
     text-align: center
+
+    &:nth-of-type(6)
+        margin-right: 0
 
     &::before
         background: $main-color
@@ -73,12 +77,17 @@
 
 .details-http
     display: inline-block
-    width: 22%
+    width: 15.783%
     margin-bottom: 25px
     border: 1px solid $main-color
+    margin-right: 10px
     position: relative
     padding: 10px 0
     text-align: center
+
+    &:nth-of-type(6)
+        margin-right: 0
+
     &::before
         background: darken($main-color, 7%)
         border-radius: 3px 3px 0 0
@@ -97,12 +106,17 @@
 
 .details-html
     display: inline-block
-    width: 22%
+    width: 15.783%
     margin-bottom: 25px
     border: 1px solid $main-color
+    margin-right: 10px
     position: relative
     padding: 10px 0
     text-align: center
+
+    &:nth-of-type(6)
+        margin-right: 0
+
     &::before
         background: darken($main-color, 14%)
         border-radius: 3px 3px 0 0
@@ -121,12 +135,16 @@
 
 .details-css
     display: inline-block
-    width: 22%
+    width: 15.783%
     margin-bottom: 25px
     border: 1px solid $main-color
+    margin-right: 10px
     position: relative
     padding: 10px 0
     text-align: center
+    &:nth-of-type(6)
+        margin-right: 0
+
     &::before
         background: darken($main-color, 21%)
         border-radius: 3px 3px 0 0

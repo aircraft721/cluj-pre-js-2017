@@ -67,10 +67,9 @@
         `;
     };
     
-    const DetailsEvaluation = function(options={}){
-        
+    const DetailsEvaluation = function(options={}){  
         return `
-        <div data-id=${options.id}>
+        <div id='accordion' class="hidethis" data-id=${options.id}>
             <div class='textarea-details-wrapper'>
                 <div class='details-list details-textarea'><p>${options.textarea1}</p></div>
                 <div class='details-list details-textarea'><p>${options.textarea2}</p></div>
@@ -110,12 +109,13 @@
         const detailsElements = options.items.map((el) =>{
             return DetailsEvaluation(el);
         })
-        
+        const detailEl = detailsElements.join('');
+
         return `
-            <div id='accordion' class="hidethis">
-                ${detailsElements}
-            <div>
-        `
+        <div>
+            ${detailEl}
+        </div>
+        `;
     }
     
     const EvaluationsTable = function(options={}){
@@ -132,7 +132,6 @@
                                 items: options.items
                             })}
                         </table>
-                        
                         ${Details({
                             items: options.items
                         })}

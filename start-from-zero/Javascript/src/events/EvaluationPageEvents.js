@@ -3,29 +3,17 @@
         this.initEvents = function(build) {
             
             const toggle = document.querySelectorAll('.plus-button');
-            //console.log(toggle);
             for(var detailsButton of toggle){
                 detailsButton.addEventListener('click',function(e){
                     e.preventDefault();
+                    var displayData = e.target.parentNode.parentNode.parentNode.dataset;
+                    
+                    console.log(displayData);
                     const accordion = document.getElementById('accordion');
                     accordion.classList.toggle('hidethis');
                 });
             }
 
-            // const plusButtons = document.querySelectorAll('.details-button');
-            
-            //     const detailsListener = function (e) {
-            //         interviewApp.Modules.NewModule.init(e.target.dataset.id);
-            //     };
-            
-            //     const addEventsEvaluations = function () {
-            //         newEvaluationButton.addEventListener('click', newButtonListener);
-            //         plusButtons.forEach((el) => {
-            //             el.addEventListener('click', detailsListener);
-            //         });
-            //     };
-            
-    
             const logoutBtn = document.querySelector('.link-logout');
             logoutBtn.addEventListener('click', function(e) {
                 e.preventDefault();
