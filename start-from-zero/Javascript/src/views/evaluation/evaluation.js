@@ -9,6 +9,7 @@ windowObjectWrap.EvaluationsPage = function(options){
         rows = JSON.parse(localStorage.getItem("localArr"));
     }
 
+
     this.render = `
     ${windowObjectWrap.NAV()}
     ${windowObjectWrap.EvaluationsTable({
@@ -95,15 +96,17 @@ windowObjectWrap.DetailsEvaluation = function(options={}){
             <div class='details-list details-html'>${options.syntaxRules}</div>
             <div class='details-list details-html'>${options.attributes}</div>
         </div>
-        
     `;
 }
+
+
 
 windowObjectWrap.Details = function(options={}){
 
     const detailsElements = options.items.map(el =>{
         return windowObjectWrap.DetailsEvaluation(el);
     })
+
 
     return `
         <div id='accordion' class="hidethis">

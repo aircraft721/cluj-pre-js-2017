@@ -1,7 +1,5 @@
 windowObjectWrap.EvaluationPageEvents = function() {
     this.initEvents = function(build) {
-
-        //function for accordion
         const toggle = document.querySelectorAll('.plus-button');
         for(var plus of toggle){
             plus.addEventListener('click',function(e){
