@@ -4,7 +4,6 @@ windowObjectWrap.EvaluationPageEvents = function() {
         //function for accordion
         const toggle = document.querySelectorAll('.plus-button');
         for(var plus of toggle){
-            console.log(plus);
             plus.addEventListener('click',function(e){
                 e.preventDefault();
                 const accordion = document.getElementById('accordion');

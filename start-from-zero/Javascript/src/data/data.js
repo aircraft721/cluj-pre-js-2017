@@ -1,3 +1,4 @@
+
 windowObjectWrap.InputData = function(){
     const inputPlaceholder = {
         
@@ -383,6 +384,8 @@ windowObjectWrap.FieldsetData = function(){
     };
     return fieldset;
 }   
+
+
         
     
         
