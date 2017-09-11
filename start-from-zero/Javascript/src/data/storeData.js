@@ -1,18 +1,20 @@
 (function(){
     windowObjectWrap.FormData = function(){
         btn.addEventListener('click',function(){
-            function User(username,date,radio,textarea,select,id){
+            function User(username,date,radio,id){
             this.username = username;
             this.date = date;
             this.radio = radio;
-            this.textarea = textarea.forEach(element=>{
+            textarea.forEach(element=>{
                 this[element.name] = element.value;
             });
-            this.select = select.forEach(element=>{
+            select.forEach(element=>{
                 this[element.name] = element.value;
             });
             this.id = (this.username + new Date().getTime()).replace(/ /g, '').toLowerCase();
             }
+            
+            
     
             const username = document.getElementById('username-id').value;
             const calendar = document.getElementById('calendar-id').value;
@@ -20,6 +22,7 @@
             const textarea = document.querySelectorAll('textarea');
             const legend = document.querySelectorAll('legend');
             const select = document.querySelectorAll('select');
+            
         
             const radioArr = [];
             checkbox.forEach(element => {
@@ -30,9 +33,7 @@
     
             const radioString = radioArr.toString();
         
-            const userObj = new User(username,calendar,radioString,textarea,select);
-            console.log(userObj);
-
+            const userObj = new User(username,calendar,radioString);
             
             const localStorageLength = localStorage.length;
             var localArr = [];

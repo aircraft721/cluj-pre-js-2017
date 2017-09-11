@@ -23,26 +23,25 @@
     
     p
         padding-left: 20px
-
-    &::before
-        background: $main-color
-        border-radius: 3px 3px 0 0
-        bottom: 100%
-        color: $white
-        content: 'textarea'
-        display: inline-block
-        font-size: 8px
-        left: -1px
-        letter-spacing: 1px
-        padding: 3px 5px
-        position: absolute
-        text-transform: uppercase
-        vertical-align: top
+    
+.top-left
+    background: $main-color
+    border-radius: 3px 3px 0 0
+    bottom: 100%
+    color: $white
+    display: inline-block
+    font-size: 9px
+    left: -1px
+    letter-spacing: 1px
+    padding: 3px 5px
+    position: absolute
+    text-transform: uppercase
+    vertical-align: top
 
 .textarea-details-wrapper
     margin-top: 25px
 
-.oop-wrapper, .http-wrapper, .html-wrapper, .css-wrapper
+.oop-wrapper, .http-wrapper, .html-wrapper, .css-wrapper, .javascript-wrapper, .nodejs-wrapper
     display: flex
     justify-content: flex-start
     flex-wrap: wrap
@@ -60,20 +59,11 @@
     &:nth-of-type(6)
         margin-right: 0
 
-    &::before
-        background: $main-color
-        border-radius: 3px 3px 0 0
-        bottom: 100%
-        color: $white
-        content: 'oop'
-        display: inline-block
-        font-size: 8px
-        left: -1px
-        letter-spacing: 1px
-        padding: 3px 5px
-        position: absolute
-        text-transform: uppercase
-        vertical-align: top
+    .top-left
+        background: darken($main-color, 4%)
+
+
+    
 
 .details-http
     display: inline-block
@@ -88,20 +78,8 @@
     &:nth-of-type(6)
         margin-right: 0
 
-    &::before
+    .top-left
         background: darken($main-color, 7%)
-        border-radius: 3px 3px 0 0
-        bottom: 100%
-        color: $white
-        content: 'http'
-        display: inline-block
-        font-size: 8px
-        left: -1px
-        letter-spacing: 1px
-        padding: 3px 5px
-        position: absolute
-        text-transform: uppercase
-        vertical-align: top
 
 
 .details-html
@@ -117,20 +95,8 @@
     &:nth-of-type(6)
         margin-right: 0
 
-    &::before
-        background: darken($main-color, 14%)
-        border-radius: 3px 3px 0 0
-        bottom: 100%
-        color: $white
-        content: 'html'
-        display: inline-block
-        font-size: 8px
-        left: -1px
-        letter-spacing: 1px
-        padding: 3px 5px
-        position: absolute
-        text-transform: uppercase
-        vertical-align: top
+    .top-left
+        background: darken($main-color, 10%)
 
 
 .details-css
@@ -145,17 +111,38 @@
     &:nth-of-type(6)
         margin-right: 0
 
-    &::before
-        background: darken($main-color, 21%)
-        border-radius: 3px 3px 0 0
-        bottom: 100%
-        color: $white
-        content: 'css'
-        display: inline-block
-        font-size: 8px
-        left: -1px
-        letter-spacing: 1px
-        padding: 3px 5px
-        position: absolute
-        text-transform: uppercase
-        vertical-align: top
+    .top-left
+        background: darken($main-color, 13%)
+
+
+.details-js
+    display: inline-block
+    width: 15.783%
+    margin-bottom: 25px
+    border: 1px solid $main-color
+    margin-right: 10px
+    position: relative
+    padding: 10px 0
+    text-align: center
+    &:nth-of-type(6)
+        margin-right: 0
+
+    .top-left
+        background: darken($main-color, 16%)
+
+
+.details-node
+    display: inline-block
+    width: 15.783%
+    margin-bottom: 25px
+    border: 1px solid $main-color
+    margin-right: 10px
+    position: relative
+    padding: 10px 0
+    text-align: center
+    &:nth-of-type(6)
+        margin-right: 0
+
+    .top-left
+        background: darken($main-color, 20%)
+
