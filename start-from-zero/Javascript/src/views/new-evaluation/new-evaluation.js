@@ -3,8 +3,9 @@ function getPromise(method, url){
         const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
             if(this.readyState === 4){
-                if(this.status == 200){
+                if(this.status >= 200 && this.status < 300){
                     try{
+                        resolve(xhr.response);
                         let response = JSON.parse(xhr.responseText);
                         windowObjectWrap.NewEvaluationPage = function(options) {
                             this.render = `
@@ -165,7 +166,7 @@ function getPromise(method, url){
 }
 getPromise('GET','../../data/xhrData.json')
 .then(function(what){
-    console.log(what);
+
 })
 .catch(function(err){
     console.error('Errorhorror', err.statusText);

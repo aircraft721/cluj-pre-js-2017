@@ -19,6 +19,5 @@ const Setup = function(){
                 view: new windowObjectWrap.EvaluationsPage(),
                 setupEvents: new windowObjectWrap.EvaluationPageEvents()
         }
-        
     }
 }   
